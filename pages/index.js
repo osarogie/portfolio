@@ -11,7 +11,7 @@ export default () => (
           <div className="z0Flex_1dv9ts4 z0Flex_mdmmr9 z0Flex_k206nx z0Flex_6hoen5 z0Flex_1agckgk z0Flex_1rr4jcp z0Box_1dv9ts4 z0Box_mdmmr9 z0Box_mdmmr9">
             <div className="z0Box_1npp29g z0Box_102tqs0 z0Box_mdmmr9 z0Box_mdmmr9">
               <div className="z0Div_mdmmr9 z0Div_mdmmr9 z0Div_1vd3drs" style={{fontSize:20,}}>
-                Nosakhare Co
+                Nosa
               </div>
             </div>
 
@@ -130,7 +130,7 @@ export default () => (
               <div className="z0Flexbox_1m6kqzy z0Flexbox_pswed9 z0Flexbox_199tkwx z0Flexbox_mdmmr9 z0Flexbox_155cfuf">
                 <div className="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi z0Box_mdmmr9 z0Box_mdmmr9">
                   <a
-                    href="http://mrsjxn.com"
+                    href="http://konfamd.com"
                     title="Konfamd iOS"
                     className="z0Link_i2atn7 z0Link_mdmmr9 z0Link_35iemg z0Link_cvl0fu z0Link_1l0da3s"
                   >
@@ -150,7 +150,7 @@ export default () => (
                 </div>
                 <div className="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi z0Box_mdmmr9 z0Box_mdmmr9">
                   <a
-                    href="https://officialnosa.github.io/up/"
+                    href="/"
                     title="The Hyper Drive"
                     className="z0Link_i2atn7 z0Link_mdmmr9 z0Link_35iemg z0Link_cvl0fu z0Link_1l0da3s"
                   >
