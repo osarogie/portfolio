@@ -10,8 +10,14 @@ export default () => (
         <div>
           <div className="z0Flex_1dv9ts4 z0Flex_mdmmr9 z0Flex_k206nx z0Flex_6hoen5 z0Flex_1agckgk z0Flex_1rr4jcp z0Box_1dv9ts4 z0Box_mdmmr9 z0Box_mdmmr9">
             <div className="z0Box_1npp29g z0Box_102tqs0 z0Box_mdmmr9 z0Box_mdmmr9">
-              <div className="z0Div_mdmmr9 z0Div_mdmmr9 z0Div_1vd3drs" style={{fontSize:20,}}>
-                Nosa
+              <div className="z0Div_mdmmr9 z0Div_mdmmr9 z0Div_1vd3drs" style={{
+                fontSize: 20,
+                height: 40,
+                width: 40,
+                background: 'url(/static/favicon.ico)',
+                
+              }}>
+                
               </div>
             </div>
 
