@@ -80,7 +80,7 @@ export default () => (
           <div className="banner relative">
             <div className="wrap">&nbsp;</div>
             <header style={{
-              backgroundColor:'rgba(240, 245, 248, 0.8117647058823529)'
+              backgroundColor:'rgba(240, 245, 248, 0.8117647058823529)',boxShadow:'1px 1px 7px -1px rgba(0, 0, 0, 0.5686274509803921)'
             }} className="relative z0Header_11vhgrl z0Header_hz4vw0 z0Header_mdmmr9">
               <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
                 <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
@@ -136,13 +136,13 @@ export default () => (
                   >
                     <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
                       <div
-                        style={{ backgroundImage: 'url(/static/gpa2.png)' }}
+                        style={{ backgroundImage: 'url(/static/gpa3.png)' }}
                         className="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
                       />
                     </div>
 
                     <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
-                      GPA Tracker
+                      GPA Calculatior
                     </h3>
                     <p className="z0P_i2atn7 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o">
                       An app to help students keep track of their academic
