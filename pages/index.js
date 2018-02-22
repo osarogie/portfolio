@@ -4,26 +4,35 @@ import Nav from '../components/nav'
 
 export default () => (
   <div>
-    <Head title='Nosakhare Emmanuel, Programmer in Lagos.' description='Building smarter, more human friendly systems.'/>
+    <Head
+      title="Nosakhare Emmanuel, Programmer in Lagos."
+      description="Building smarter, more human friendly systems."
+    />
     <div>
-      <div style={{fontFamily:'-apple-system, BlinkMacSystemFont, sans-serif',lineHeight:1.5,color:'#000'}}>
+      <div
+        style={{
+          fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+          lineHeight: 1.5,
+          color: '#000'
+        }}
+      >
         <div>
           <div className="z0Flex_1dv9ts4 z0Flex_mdmmr9 z0Flex_k206nx z0Flex_6hoen5 z0Flex_1agckgk z0Flex_1rr4jcp z0Box_1dv9ts4 z0Box_mdmmr9 z0Box_mdmmr9">
             <div className="z0Box_1npp29g z0Box_102tqs0 z0Box_mdmmr9 z0Box_mdmmr9">
-              <div className="z0Div_mdmmr9 z0Div_mdmmr9 z0Div_1vd3drs" style={{
-                fontSize: 20,
-                height: 40,
-                width: 40,
-                background: 'url(/static/favicon.ico)',
-                
-              }}>
-                
-              </div>
+              <div
+                className="z0Div_mdmmr9 z0Div_mdmmr9 z0Div_1vd3drs"
+                style={{
+                  fontSize: 20,
+                  height: 40,
+                  width: 40,
+                  background: 'url(/static/favicon.ico)'
+                }}
+              />
             </div>
 
             <nav className="z0Nav_16e1kl6 z0Nav_mdmmr9 z0Nav_mdmmr9">
               <div
-                style={{display:'inline-block'}}
+                style={{ display: 'inline-block' }}
                 className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
               >
                 <a
@@ -34,7 +43,7 @@ export default () => (
                 </a>
               </div>
               <div
-                style={{display:'inline-block'}}
+                style={{ display: 'inline-block' }}
                 className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
               >
                 <a
@@ -56,7 +65,7 @@ export default () => (
                 </a>
               </div> */}
               <div
-                style={{display:'inline-block'}}
+                style={{ display: 'inline-block' }}
                 className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
               >
                 <a
@@ -68,18 +77,22 @@ export default () => (
               </div>
             </nav>
           </div>
-          <header className="z0Header_11vhgrl z0Header_hz4vw0 z0Header_mdmmr9">
-            <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
-              <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
-                <h3 className="z0H3_16557ik z0H3_1emnpaq z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
-                  Nosakhare Emmanuel, Programmer in Lagos.
-                </h3>
-                <h1 className="z0H1_1o2ezep z0H1_12jqrxu z0H1_ngp8oq z0H1_1bmf5hr z0H1_35iemg z0H1_o856zb">
-                  Building smarter, more people friendly systems.
-                </h1>
-              </div>
+          <div className="banner relative">
+            <div className="wrap">
+              <header className="relative z0Header_11vhgrl z0Header_hz4vw0 z0Header_mdmmr9">
+                <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
+                  <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
+                    <h3 className="z0H3_16557ik z0H3_1emnpaq z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
+                      Nosakhare Emmanuel, Programmer in Lagos.
+                    </h3>
+                    <h1 className="z0H1_1o2ezep z0H1_12jqrxu z0H1_ngp8oq z0H1_1bmf5hr z0H1_35iemg z0H1_o856zb">
+                      Building smarter, more people friendly systems.
+                    </h1>
+                  </div>
+                </div>
+              </header>
             </div>
-          </header>
+          </div>
           <div className="z0Box_3ct8mo z0Box_w8x2v6 z0Box_8ctdvs z0Box_mdmmr9">
             <div className="z0Container_tt19w7 z0Container_1jdd6it z0Container_35iemg z0Container_6osar3">
               <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
@@ -99,7 +112,10 @@ export default () => (
                   >
                     <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
                       <div
-                        style={{backgroundImage:'url(https://img.thecommunity.ng/800x1000/ecaf1b44-3408-448a-b53a-de3183504584)'}}
+                        style={{
+                          backgroundImage:
+                            'url(https://img.thecommunity.ng/800x1000/ecaf1b44-3408-448a-b53a-de3183504584)'
+                        }}
                         className="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
                       />
                     </div>
@@ -119,7 +135,7 @@ export default () => (
                   >
                     <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
                       <div
-                        style={{backgroundImage:'url(/static/gpa2.png)'}}
+                        style={{ backgroundImage: 'url(/static/gpa2.png)' }}
                         className="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
                       />
                     </div>
@@ -128,7 +144,8 @@ export default () => (
                       GPA Tracker
                     </h3>
                     <p className="z0P_i2atn7 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o">
-                      An app to help students keep track of their academic progress
+                      An app to help students keep track of their academic
+                      progress
                     </p>
                   </a>
                 </div>
@@ -142,7 +159,11 @@ export default () => (
                   >
                     <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
                       <div
-                        style={{backgroundImage:'url(https://konfamd.com/home/wp-content/uploads/2017/11/1-Silder1-phone.png)',backgroundSize:'contain'}}
+                        style={{
+                          backgroundImage:
+                            'url(https://konfamd.com/home/wp-content/uploads/2017/11/1-Silder1-phone.png)',
+                          backgroundSize: 'contain'
+                        }}
                         className="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
                       />
                     </div>
@@ -162,7 +183,11 @@ export default () => (
                   >
                     <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
                       <div
-                        style={{backgroundImage:'url(https://thd.nosakhare.us/static/media/logo.baae8b34.png)',backgroundSize:'contain'}}
+                        style={{
+                          backgroundImage:
+                            'url(https://thd.nosakhare.us/static/media/logo.baae8b34.png)',
+                          backgroundSize: 'contain'
+                        }}
                         className="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
                       />
                     </div>
@@ -175,7 +200,6 @@ export default () => (
                   </a>
                 </div>
               </div>
-              
             </div>
             <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
               <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
@@ -488,15 +512,23 @@ export default () => (
                   className="z0Img_mdmmr9 z0Img_mdmmr9 z0Img_nw324o"
                 />
               </a>
-              
             </div>
-            
           </div>
         </div>
       </div>
     </div>
 
     <style jsx>{`
+     .banner .wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #c1b4b4;
+      background-image: url(/static/favicon.ico)
+    }
+    .relative {
+      position: relative;
+    }
       * {
       box-sizing: border-box;
     }
@@ -5492,7 +5524,6 @@ export default () => (
       padding-top: 4px;
       padding-bottom: 4px;
     }
-    
     `}</style>
   </div>
 )
