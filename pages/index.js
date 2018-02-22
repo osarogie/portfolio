@@ -78,20 +78,19 @@ export default () => (
             </nav>
           </div>
           <div className="banner relative">
-            <div className="wrap">
-              <header className="relative z0Header_11vhgrl z0Header_hz4vw0 z0Header_mdmmr9">
-                <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
-                  <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
-                    <h3 className="z0H3_16557ik z0H3_1emnpaq z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
-                      Nosakhare Emmanuel, Programmer in Lagos.
-                    </h3>
-                    <h1 className="z0H1_1o2ezep z0H1_12jqrxu z0H1_ngp8oq z0H1_1bmf5hr z0H1_35iemg z0H1_o856zb">
-                      Building smarter, more people friendly systems.
-                    </h1>
-                  </div>
+            <div className="wrap"/>
+            <header className="relative z0Header_11vhgrl z0Header_hz4vw0 z0Header_mdmmr9">
+              <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
+                <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
+                  <h3 className="z0H3_16557ik z0H3_1emnpaq z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
+                    Nosakhare Emmanuel, Programmer in Lagos.
+                  </h3>
+                  <h1 className="z0H1_1o2ezep z0H1_12jqrxu z0H1_ngp8oq z0H1_1bmf5hr z0H1_35iemg z0H1_o856zb">
+                    Building smarter, more people friendly systems.
+                  </h1>
                 </div>
-              </header>
-            </div>
+              </div>
+            </header>
           </div>
           <div className="z0Box_3ct8mo z0Box_w8x2v6 z0Box_8ctdvs z0Box_mdmmr9">
             <div className="z0Container_tt19w7 z0Container_1jdd6it z0Container_35iemg z0Container_6osar3">
