@@ -25,6 +25,7 @@ export default () => (
                   fontSize: 20,
                   height: 48,
                   width: 48,
+                  borderRadius: 20,
                   background: 'url(https://avatars1.githubusercontent.com/u/34954214?s=48&v=4)'
                 }}
               />
