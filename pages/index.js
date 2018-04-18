@@ -23,9 +23,10 @@ export default () => (
                 className="z0Div_mdmmr9 z0Div_mdmmr9 z0Div_1vd3drs"
                 style={{
                   fontSize: 20,
-                  height: 40,
-                  width: 40,
-                  background: 'url(/static/favicon.ico)'
+                  height: 48,
+                  width: 48,
+                  borderRadius: 20,
+                  background: 'url(https://avatars1.githubusercontent.com/u/34954214?s=48&v=4)'
                 }}
               />
             </div>
@@ -525,7 +526,7 @@ export default () => (
       width: 100%;
       height: 100%;
       background-color: #c1b4b4;
-      background-image: url(/static/favicon.ico)
+      background-image: url(https://avatars1.githubusercontent.com/u/34954214?s=200&v=4)
     }
     .relative {
       position: relative;
@@ -950,14 +951,14 @@ export default () => (
       display: block;
     }
     .z0Flex_1dv9ts4 {
-      padding-left: 32px;
-      padding-right: 32px;
+      padding-left: 20px;
+      padding-right: 20px;
       padding-top: 16px;
       padding-bottom: 16px;
     }
     .z0Box_1dv9ts4 {
-      padding-left: 32px;
-      padding-right: 32px;
+      padding-left: 20px;
+      padding-right: 20px;
       padding-top: 16px;
       padding-bottom: 16px;
     }
