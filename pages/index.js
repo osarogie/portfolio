@@ -32,6 +32,17 @@ export default () => (
             </div>
 
             <nav className="z0Nav_16e1kl6 z0Nav_mdmmr9 z0Nav_mdmmr9">
+            <div
+                style={{ display: 'inline-block' }}
+                className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
+              >
+                <a
+                  href="//apps.nosakhare.us"
+                  className="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09"
+                >
+                  Apps
+                </a>
+              </div>
               <div
                 style={{ display: 'inline-block' }}
                 className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
@@ -43,7 +54,7 @@ export default () => (
                   Work
                 </a>
               </div>
-              <div
+              {/* <div
                 style={{ display: 'inline-block' }}
                 className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
               >
@@ -53,7 +64,7 @@ export default () => (
                 >
                   TheCommunity
                 </a>
-              </div>
+              </div> */}
               {/* <div
                 style={{display:'inline-block'}}
                 className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
