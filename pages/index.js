@@ -131,8 +131,8 @@ export default () => (
                 </div>
                 <div className="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi z0Box_mdmmr9 z0Box_mdmmr9">
                   <a
-                    href="https://github.com/officialnosa/gpa"
-                    title="GPA Tracker"
+                    href="https://apps.nosa.gq/aplus"
+                    title="A Plus"
                     className="z0Link_i2atn7 z0Link_mdmmr9 z0Link_35iemg z0Link_cvl0fu z0Link_1l0da3s"
                   >
                     <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
@@ -143,7 +143,7 @@ export default () => (
                     </div>
 
                     <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
-                      GPA Calculatior
+                      A plus
                     </h3>
                     <p className="z0P_i2atn7 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o">
                       An app to help students keep track of their academic
