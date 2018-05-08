@@ -556,11 +556,11 @@ export default () => (
         margin: 0;
       }
       .jumbo {
-        background: url(https://images.unsplash.com/photo-1511350333854-21bcdf3088c5?ixlib=rb-0.3.5…jEyMDd9&s=eeb6de2…&auto=format&fit=crop&w=750&q=80);
+        background: url(https://images.unsplash.com/photo-1513528473392-f3fffb1b31a9?ixlib=rb-0.3.5…jEyMDd9&s=44845c6…&auto=format&fit=crop&w=750&q=80);
         background-repeat: no-repeat;
-        background-size: 100% 100%;
         border-radius: 5px;
         overflow: hidden;
+        background-size: cover;
       }
       .banner header {
         background-size: 100% 100%;
@@ -713,6 +713,15 @@ export default () => (
       @media screen and (min-width: 52em) {
         .z0H1_ngp8oq {
           font-size: 64px;
+        }
+      }
+      @media screen and (max-width: 320px) {
+        .z0NavLink_35iemg {
+          font-size: 9px !important;
+        }
+        .z0Header_11vhgrl {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
         }
       }
       .z0H1_1bmf5hr {
@@ -1016,6 +1025,8 @@ export default () => (
       }
       .z0NavLink_35iemg {
         color: #fff;
+        border: 1px solid;
+        padding-right: 5px;
       }
       .z0Header_11vhgrl {
         padding-left: 32px;
