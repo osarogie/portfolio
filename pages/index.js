@@ -510,7 +510,7 @@ export default () => (
           >
             <div className="z0Flexbox_1j8enju z0Flexbox_i86xbc z0Flexbox_mdmmr9 z0Flexbox_155cfuf">
               <a
-                href="http://twitter.com/theofficialnosa"
+                href="http://twitter.com/thenosakhare"
                 className="z0TextLink_hr1it z0TextLink_h1xc7s z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
               >
                 <img
@@ -519,7 +519,7 @@ export default () => (
                 />
               </a>
               <a
-                href="http://github.com/officialnosa"
+                href="http://github.com/osarogie"
                 className="z0TextLink_hr1it z0TextLink_h1xc7s z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
               >
                 <img
