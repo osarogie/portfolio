@@ -45,7 +45,7 @@ export default () => (
                   className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
                 >
                   <a
-                    href="//apps.nosakhare.us"
+                    href="//apps.osarogie.com"
                     className="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09"
                   >
                     Apps
@@ -183,7 +183,7 @@ export default () => (
                   </a>
                 </div>
               </div>
-              <div className="z0Flexbox_1m6kqzy z0Flexbox_pswed9 z0Flexbox_199tkwx z0Flexbox_mdmmr9 z0Flexbox_155cfuf">
+              {/* <div className="z0Flexbox_1m6kqzy z0Flexbox_pswed9 z0Flexbox_199tkwx z0Flexbox_mdmmr9 z0Flexbox_155cfuf">
                 <div className="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi z0Box_mdmmr9 z0Box_mdmmr9">
                   <a
                     href="http://konfamd.com"
@@ -232,7 +232,7 @@ export default () => (
                     </p>
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
               <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
