@@ -2,4 +2,4 @@
 
 ### Building smarter, more people friendly systems.
 
-[nosakhare.us](https://nosakhare.us)
+[osarogie.com](https://osarogie.com)
