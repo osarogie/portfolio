@@ -263,6 +263,13 @@ export default () => (
                   </li>
                 </ul>
               </div>
+
+            <div class="jsx-2843586724 z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9" style="
+                margin-bottom: 128px;
+            ">
+              <h4 id="writing" class="jsx-2843586724 z0H4_1ycl9dg z0H4_12zrzid z0H4_35iemg z0H4_11gibmt">GitHub Activity</h4>
+              <img src="//ghchart.rshah.org/409ba5/osarogie" alt="Nosa's Github chart" style="height:auto;width:100%;" />
+            </div>
               {/* <div
                 id="reading"
                 className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9"
@@ -1091,7 +1098,7 @@ export default () => (
         margin-top: 64px;
       }
       .z0Ul_m2eadc {
-        margin-bottom: 128px;
+//         margin-bottom: 128px;
         padding-left: 0px;
       }
       .z0TextLink_35iemg {
@@ -1541,7 +1548,7 @@ export default () => (
         margin-top: 64px;
       }
       .z0Ul_m2eadc {
-        margin-bottom: 128px;
+//         margin-bottom: 128px;
         padding-left: 0px;
       }
       .z0TextLink_1kqftbz {
