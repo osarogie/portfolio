@@ -264,10 +264,10 @@ export default () => (
                 </ul>
               </div>
 
-            <div class="jsx-2843586724 z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9" style="
+            <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9" style="
                 margin-bottom: 128px;
             ">
-              <h4 id="writing" class="jsx-2843586724 z0H4_1ycl9dg z0H4_12zrzid z0H4_35iemg z0H4_11gibmt">GitHub Activity</h4>
+              <h4 id="writing" className="z0H4_1ycl9dg z0H4_12zrzid z0H4_35iemg z0H4_11gibmt">GitHub Activity</h4>
               <img src="//ghchart.rshah.org/409ba5/osarogie" alt="Nosa's Github chart" style="height:auto;width:100%;" />
             </div>
               {/* <div
