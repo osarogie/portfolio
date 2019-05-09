@@ -573,7 +573,7 @@ export default () => (
         margin: 0;
       }
       .jumbo {
-        background: url(https://images.unsplash.com/photo-1513528473392-f3fffb1b31a9?ixlib=rb-0.3.5…jEyMDd9&s=44845c6…&auto=format&fit=crop&w=750&q=80);
+        background: url(https://images.unsplash.com/photo-1535402803947-a950d5f7ae4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80);
         background-repeat: no-repeat;
         border-radius: 5px;
         overflow: hidden;
