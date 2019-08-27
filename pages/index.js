@@ -56,10 +56,10 @@ export default () => (
                   className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
                 >
                   <a
-                    href="#work"
+                    href="//blog.osarogie.com"
                     className="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09"
                   >
-                    Work
+                    Blog
                   </a>
                 </div>
                 {/* <div
