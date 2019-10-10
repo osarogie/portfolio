@@ -2,8 +2,8 @@
   "name": "nosakhare",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "next start -p $PORT",
+    "build": "next build && next export",
+    "start": "serve ./out",
     "prestart": "next build"
   },
   "dependencies": {
