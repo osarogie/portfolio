@@ -4,7 +4,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next",
-    "prestart": "next build"
+    "prestart": "next build",
+    "test": "echo 'No tests yet'"
   },
   "dependencies": {
     "next": "^9.1.1",
