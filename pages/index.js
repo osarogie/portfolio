@@ -1,11 +1,13 @@
 import Link from 'next/link'
-import Head from '../components/head'
-import Nav from '../components/nav'
-// import Logo from '../images/android-icon-72x72.png'
+import { CustomHead } from '../src/components/CustomHead'
+import Nav from '../src/components/nav'
+import { WorkItem } from '../src/components/WorkItem'
+import { SocialLink } from '../src/components/SocialLink'
+// import Logo from '../src/images/android-icon-72x72.png'
 
 export default () => (
   <div>
-    <Head
+    <CustomHead
       title="Nosakhare Emmanuel, Programmer in Lagos."
       description="Building smarter, more human friendly systems."
     />
@@ -33,8 +35,11 @@ export default () => (
                     height: 48,
                     width: 48,
                     borderRadius: 32,
-                    background:
-                      'url(https://avatars1.githubusercontent.com/u/34954214?s=48&v=4)'
+                    // background:
+                    //   'url(https://avatars1.githubusercontent.com/u/34954214?s=48&v=4)'
+                    borderWidth: 7,
+                    borderColor: '#fff',
+                    borderStyle: 'solid'
                   }}
                 />
               </div>
@@ -137,102 +142,19 @@ export default () => (
                 </h4>
               </div>
               <div className="z0Flexbox_mdmmr9 z0Flexbox_mdmmr9 z0Flexbox_155cfuf">
-                <div className="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi z0Box_mdmmr9 z0Box_mdmmr9">
-                  <a
-                    href="https://thecommunity.ng"
-                    title="TheCommunity"
-                    className="z0Link_i2atn7 z0Link_mdmmr9 z0Link_35iemg z0Link_cvl0fu z0Link_1l0da3s"
-                  >
-                    <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
-                      <div
-                        style={{
-                          backgroundImage:
-                            'url(https://img.thecommunity.ng/800x1000/ecaf1b44-3408-448a-b53a-de3183504584)'
-                        }}
-                        className="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
-                      />
-                    </div>
-                    <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
-                      TheCommunity
-                    </h3>
-                    <p className="z0P_i2atn7 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o">
-                      A storytelling platform
-                    </p>
-                  </a>
-                </div>
-                <div className="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi z0Box_mdmmr9 z0Box_mdmmr9">
-                  <a
-                    href="https://apps.nosa.gq/aplus"
-                    title="A Plus"
-                    className="z0Link_i2atn7 z0Link_mdmmr9 z0Link_35iemg z0Link_cvl0fu z0Link_1l0da3s"
-                  >
-                    <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
-                      <div
-                        style={{ backgroundImage: 'url(/static/gpa3.png)' }}
-                        className="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
-                      />
-                    </div>
-
-                    <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
-                      A plus
-                    </h3>
-                    <p className="z0P_i2atn7 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o">
-                      An app to help students keep track of their academic
-                      progress
-                    </p>
-                  </a>
-                </div>
+                <WorkItem
+                  name="TheCommunity"
+                  url="//thecommunity.ng"
+                  description="A storytellling platform"
+                  image="https://img.thecommunity.ng/800x1000/ecaf1b44-3408-448a-b53a-de3183504584"
+                />
+                <WorkItem
+                  name="A Plus - Academic Assistant"
+                  url="//aplus.osarogie.com"
+                  description="An app to help students keep track of their academicprogress"
+                  image="/gpa3.png"
+                />
               </div>
-              {/* <div className="z0Flexbox_1m6kqzy z0Flexbox_pswed9 z0Flexbox_199tkwx z0Flexbox_mdmmr9 z0Flexbox_155cfuf">
-                <div className="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi z0Box_mdmmr9 z0Box_mdmmr9">
-                  <a
-                    href="http://konfamd.com"
-                    title="Konfamd iOS"
-                    className="z0Link_i2atn7 z0Link_mdmmr9 z0Link_35iemg z0Link_cvl0fu z0Link_1l0da3s"
-                  >
-                    <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
-                      <div
-                        style={{
-                          backgroundImage:
-                            'url(https://konfamd.com/home/wp-content/uploads/2017/11/1-Silder1-phone.png)',
-                          backgroundSize: 'contain'
-                        }}
-                        className="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
-                      />
-                    </div>
-                    <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
-                      KonfamD iOS
-                    </h3>
-                    <p className="z0P_i2atn7 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o">
-                      An interactive entertainment app
-                    </p>
-                  </a>
-                </div>
-                <div className="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi z0Box_mdmmr9 z0Box_mdmmr9">
-                  <a
-                    href="/"
-                    title="The Hyper Drive"
-                    className="z0Link_i2atn7 z0Link_mdmmr9 z0Link_35iemg z0Link_cvl0fu z0Link_1l0da3s"
-                  >
-                    <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
-                      <div
-                        style={{
-                          backgroundImage:
-                            'url(https://thd.nosakhare.us/static/media/logo.baae8b34.png)',
-                          backgroundSize: 'contain'
-                        }}
-                        className="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
-                      />
-                    </div>
-                    <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
-                      The Hyper Drive
-                    </h3>
-                    <p className="z0P_i2atn7 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o">
-                      A hub for comic lovers
-                    </p>
-                  </a>
-                </div>
-              </div> */}
             </div>
             <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
               <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
@@ -280,245 +202,6 @@ export default () => (
                   style={{ height: 'auto', width: '100%' }}
                 />
               </div>
-              {/* <div
-                id="reading"
-                className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9"
-              >
-                <h4
-                  id="writing"
-                  className="z0H4_1ycl9dg z0H4_12zrzid z0H4_35iemg z0H4_11gibmt"
-                >
-                  READING LIST
-                </h4>
-                <ul className="z0Ul_m2eadc z0Ul_mdmmr9 z0Ul_aw2unr">
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://worrydream.com/LearnableProgramming/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Learnable Programming
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://worrydream.com/refs/Brooks-NoSilverBullet.pdf"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      No Silver-Bullet —Essence and Accident in Software
-                      Engineering
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://nicolefenton.com/words-as-material/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Words as Material
-                    </a>
-                  </li>
-
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="https://alistapart.com/article/material-honesty-on-the-web/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Material Honesty on the Web
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="https://justinjackson.ca/words.html"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Words
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      What is Code?
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://idlewords.com/talks/web_design_first_100_years.htm"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Web Design the First 100 Years
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://stevelosh.com/blog/2013/04/git-koans/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Git Koans
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="https://sanctum.geek.nz/arabesque/vim-koans/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Vim Koans
-                    </a>
-                  </li>
-
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://jxnblk.com/writing/posts/universal-ui-components/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Universal UI Components
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://jxnblk.com/writing/posts/patterns-for-style-composition-in-react/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Patterns for Style Composition in React
-                    </a>
-                  </li>
-
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="https://csswizardry.com/2012/10/a-classless-class-on-using-more-classes-in-your-html/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      A classless class—on using more classes in your HTML
-                    </a>
-                  </li>
-
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="https://csswizardry.com/2012/11/code-smells-in-css/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Code Smells in CSS
-                    </a>
-                  </li>
-
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://artisanalbytes.com/a-case-for-the-fool/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      A Case for the Fool
-                    </a>
-                  </li>
-
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://www.stubbornella.org/content/2010/06/12/visual-semantics-in-html-and-css/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Visual Semantics in HTML and CSS
-                    </a>
-                  </li>
-
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      About HTML Semantics Front-end Architecture
-                    </a>
-                  </li>
-
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      The Media Object Saves Hundreds of Lines of Code
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://blog.vivekhaldar.com/post/3339907908/the-cognitive-style-of-unix"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      The Cognitive Style of Unix
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://jxnblk.com/writing/posts/mathematical-web-typography/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Mathematical Web Typography
-                    </a>
-                  </li>
-
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://blog.vivekhaldar.com/post/79843441901/the-automatic-corporation"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      The Automatic Corporation
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href=""
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Making it Right: Technical Debt vs. Slop
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="https://www.cooper.com/journal/2012/08/the-best-interface-is-no-interface"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      The Best Interface is No Interface
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="https://ia.net/topics/100e2r/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      The 100% Easy-2-Read Standard
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="https://frankchimero.com/writing/what-screens-want/"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      What Screens Want
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="https://practicaltypography.com/research-papers.html"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Typography Research Papers
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://wiki.c2.com/?UnixDesignPhilosophy"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Unix Design Philosophy
-                    </a>
-                  </li>
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
-                    <a
-                      href="http://www.catb.org/esr/writings/taoup/html/ch01s06.html"
-                      className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-                    >
-                      Basics of the Unix Philosophy
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
             </div>
           </div>
           <div
@@ -526,52 +209,29 @@ export default () => (
             className="z0Flexbox_voqzph z0Flexbox_w8x2v6 z0Flexbox_155cfuf"
           >
             <div className="z0Flexbox_1j8enju z0Flexbox_i86xbc z0Flexbox_mdmmr9 z0Flexbox_155cfuf">
-              <a
-                href="http://twitter.com/thenosakhare"
-                className="z0TextLink_hr1it z0TextLink_h1xc7s z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-              >
-                <img
-                  src="https://icon.now.sh/twitter/000000/16"
-                  className="z0Img_mdmmr9 z0Img_mdmmr9 z0Img_nw324o"
-                />
-              </a>
-              <a
-                href="http://github.com/osarogie"
-                className="z0TextLink_hr1it z0TextLink_h1xc7s z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-              >
-                <img
-                  src="https://icon.now.sh/github/000000/16"
-                  className="z0Img_mdmmr9 z0Img_mdmmr9 z0Img_nw324o"
-                />
-              </a>
-              <a
-                href="http://instagram.com/the.art.spirit"
-                className="z0TextLink_hr1it z0TextLink_h1xc7s z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-              >
-                <img
-                  src="https://icon.now.sh/instagram/000000/16"
-                  className="z0Img_mdmmr9 z0Img_mdmmr9 z0Img_nw324o"
-                />
-              </a>
-              <a
+              <SocialLink href="//twitter.com/thenosakhare" icon="twitter" />
+              <SocialLink href="//github.com/osarogie" icon="github" />
+              <SocialLink
+                href="//instagram.com/the.art.spirit"
+                icon="instagram"
+              />
+              <SocialLink
                 href="mailto:nonreactiv@gmail.com"
-                className="z0TextLink_hr1it z0TextLink_h1xc7s z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
-              >
-                <img
-                  src="https://icon.now.sh/mail/000000/18"
-                  className="z0Img_mdmmr9 z0Img_mdmmr9 z0Img_nw324o"
-                />
-              </a>
+                icon="mail"
+                size={18}
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <style jsx>{`
+    <style jsx global>{`
       body {
-        margin: 0;
+        margin: 20px;
+        background-color: #eeeeee;
       }
+    `}</style>
+    <style jsx>{`
       .jumbo {
         background: url(https://images.unsplash.com/photo-1535402803947-a950d5f7ae4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80);
         background-repeat: no-repeat;
@@ -594,9 +254,6 @@ export default () => (
       }
       * {
         box-sizing: border-box;
-      }
-      body {
-        margin: 0;
       }
       .z0Flex_13yk34y {
         padding-left: 64px;
@@ -623,8 +280,6 @@ export default () => (
         padding-right: 64px;
         padding-top: 32px;
         padding-bottom: 32px;
-      }
-      .z0Box_mdmmr9 {
       }
       .z0Box_1npp29g {
         margin-right: auto;
@@ -704,20 +359,11 @@ export default () => (
         padding-left: 16px;
         padding-right: 16px;
       }
-      .z0H3_16557ik {
-        font-size: 20px;
-      }
       .z0H3_1emnpaq {
         margin-bottom: 0px;
       }
       .z0H3_1wdoa1p {
         color: black;
-      }
-      .z0H3_x1yig9 {
-        border-width: 0px;
-        border-style: solid;
-      }
-      .z0H3_mdmmr9 {
       }
       .z0H1_1o2ezep {
         font-size: 32px;
@@ -755,9 +401,6 @@ export default () => (
         padding-left: 64px;
         padding-right: 64px;
       }
-      .z0Box_w8x2v6 {
-        width: 100%;
-      }
       .z0Box_8ctdvs {
         background-color: transparent;
       }
@@ -785,19 +428,6 @@ export default () => (
       .z0H4_11gibmt {
         text-transform: uppercase;
       }
-      @media screen and (min-width: 40em) {
-        .z0Box_pq7l2s {
-          width: 100%;
-        }
-      }
-      @media screen and (min-width: 52em) {
-        .z0Box_1snu2vi {
-          width: 50%;
-        }
-      }
-      .z0Link_i2atn7 {
-        font-size: 14px;
-      }
       .z0Link_iisq1y {
         padding-left: undefined;
         padding-right: undefined;
@@ -821,64 +451,11 @@ export default () => (
         text-decoration: none;
         transition: opacity 0.2s ease-in;
       }
-      .z0Link_1l0da3s:hover {
-        opacity: 0.7;
-        transition: opacity 0.2s ease-in-out;
-      }
-      .z0AspectRatio_1dte17j {
-        padding-bottom: 56.25%;
-      }
       .z0AspectRatio_8pfw7x {
         background-color: bg;
       }
-      .z0AspectRatio_dvi25k {
-        border-radius: 0;
-      }
-      .z0AspectRatio_leueqe {
-        height: 0;
-        position: relative;
-      }
-      .z0AspectRatioObject_mdmmr9 {
-      }
-      .z0AspectRatioObject_w8x2v6 {
-        width: 100%;
-      }
-      .z0AspectRatioObject_dvi25k {
-        border-radius: 0;
-      }
-      .z0AspectRatioObject_hqpzos {
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        bottom: 0;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100%;
-      }
-      @media screen and (min-width: 40em) {
-        .z0H3_55w3hf {
-          font-size: 24px;
-        }
-      }
-      .z0H3_1u1o96 {
-        margin-bottom: 0px;
-        margin-top: 16px;
-      }
-      .z0P_i2atn7 {
-        font-size: 14px;
-      }
-      @media screen and (min-width: 40em) {
-        .z0P_10plfnz {
-          font-size: 16px;
-        }
-      }
       .z0P_1m6kqzy {
         margin-top: 0px;
-      }
-      .z0P_mdmmr9 {
       }
       .z0P_j8en80 {
         font-weight: 400;
@@ -963,7 +540,7 @@ export default () => (
         align-items: center;
         display: flex;
         flex-wrap: wrap;
-        justify-content: initial;
+        justify-content: space-between;
       }
       .z0Flexbox_t948g5 {
         padding-left: 32px;
@@ -981,9 +558,6 @@ export default () => (
         padding-left: 0px;
         padding-top: 0px;
         padding-bottom: 0px;
-      }
-      .z0TextLink_h1xc7s {
-        color: white;
       }
       .z0Img_mdmmr9 {
       }
@@ -1061,13 +635,6 @@ export default () => (
         padding-left: 8px;
         padding-right: 8px;
       }
-      .z0Box_ywo3zt {
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-      .z0H3_35iemg {
-        color: #1d0016;
-      }
       .z0H1_35iemg {
         color: #1d0016;
       }
@@ -1087,12 +654,6 @@ export default () => (
       }
       .z0H4_35iemg {
         color: #1d0016;
-      }
-      .z0Link_35iemg {
-        color: #1d0016;
-      }
-      .z0AspectRatio_1h0a8ja {
-        background-color: #f0f5f8;
       }
       .z0H3_1oe3gjs {
         margin-bottom: 0px;
@@ -1264,91 +825,21 @@ export default () => (
       }
       .z0Flexbox_mdmmr9 {
       }
-      .z0Flexbox_155cfuf {
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: initial;
-      }
-      .z0Link_i2atn7 {
-        font-size: 14px;
-      }
       .z0Link_mdmmr9 {
       }
       .z0Link_1wdoa1p {
         color: black;
       }
-      .z0Link_cvl0fu {
-        border-bottom: 1px solid black;
-        display: block;
-        font-weight: bold;
-        text-decoration: none;
-        transition: opacity 0.2s ease-in;
-      }
-      .z0Link_1l0da3s:hover {
-        opacity: 0.7;
-        transition: opacity 0.2s ease-in-out;
-      }
-      .z0AspectRatio_1dte17j {
-        padding-bottom: 56.25%;
-      }
       .z0AspectRatio_8pfw7x {
         background-color: bg;
-      }
-      .z0AspectRatio_dvi25k {
-        border-radius: 0;
-      }
-      .z0AspectRatio_leueqe {
-        height: 0;
-        position: relative;
-      }
-      .z0AspectRatioObject_mdmmr9 {
-      }
-      .z0AspectRatioObject_w8x2v6 {
-        width: 100%;
-      }
-      .z0AspectRatioObject_dvi25k {
-        border-radius: 0;
-      }
-      .z0AspectRatioObject_hqpzos {
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        bottom: 0;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100%;
-      }
-      @media screen and (min-width: 40em) {
-        .z0H3_55w3hf {
-          font-size: 24px;
-        }
       }
       .z0H3_3s78ns {
         margin-bottom: 0px;
         margin-top: 32px;
       }
-      .z0P_i2atn7 {
-        font-size: 14px;
-      }
-      @media screen and (min-width: 40em) {
-        .z0P_10plfnz {
-          font-size: 16px;
-        }
-      }
       .z0P_uo73rf {
         margin-top: 0px;
         padding-bottom: 16px;
-      }
-      .z0P_mdmmr9 {
-      }
-      .z0P_eqnk6o {
-        font-weight: 400;
-        line-height: 1.5;
-        max-width: 28em;
       }
       .z0Flexbox_1m6kqzy {
         margin-top: 0px;
@@ -1448,9 +939,6 @@ export default () => (
         padding-top: 16px;
         padding-bottom: 16px;
       }
-      .z0TextLink_h1xc7s {
-        color: white;
-      }
       .z0Img_mdmmr9 {
       }
       .z0Img_nw324o {
@@ -1534,20 +1022,6 @@ export default () => (
       .z0H4_35iemg {
         color: #1d0016;
       }
-      .z0Link_35iemg {
-        color: #1d0016;
-      }
-      .z0AspectRatio_1h0a8ja {
-        background-color: #f0f5f8;
-      }
-      .z0H3_1u1o96 {
-        margin-bottom: 0px;
-        margin-top: 16px;
-      }
-      .z0P_u9qnin {
-        margin-top: 0px;
-        padding-bottom: 8px;
-      }
       @media screen and (min-width: 52em) {
         .z0Flexbox_199tkwx {
           margin-top: 32px;
@@ -1580,12 +1054,6 @@ export default () => (
       }
       .z0Flexbox_1j8enju {
         padding-left: 16px;
-      }
-      .z0TextLink_hr1it {
-        margin-right: 32px;
-        padding-left: 0px;
-        padding-top: 8px;
-        padding-bottom: 8px;
       }
       .z0Flexbox_1lcbbl9 {
         padding-right: 16px;
