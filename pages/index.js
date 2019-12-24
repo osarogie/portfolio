@@ -166,7 +166,7 @@ export default () => (
                 </h4>
 
                 <ul className="z0Ul_m2eadc z0Ul_mdmmr9 z0Ul_aw2unr">
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
+                  <li className="z0ListItem_kewhca z0ListItem_mdmmr9">
                     <a
                       href="https://thecommunity.ng/nosa/249/birth"
                       className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
@@ -175,7 +175,7 @@ export default () => (
                     </a>
                   </li>
 
-                  <li className="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9">
+                  <li className="z0ListItem_kewhca z0ListItem_mdmmr9">
                     <a
                       href="https://thecommunity.ng/nosa/221/how-i-started-a-company-by-accident"
                       className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
@@ -228,7 +228,6 @@ export default () => (
     <style jsx global>{`
       body {
         margin: 20px;
-        background-color: #eeeeee;
       }
     `}</style>
     <style jsx>{`
@@ -485,8 +484,6 @@ export default () => (
       .z0Ul_aw2unr {
         list-style: none;
       }
-      .z0ListItem_mdmmr9 {
-      }
       .z0ListItem_kewhca {
         border-bottom-width: 1px;
         border-bottom-style: solid;
@@ -540,7 +537,7 @@ export default () => (
         align-items: center;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: initial;
       }
       .z0Flexbox_t948g5 {
         padding-left: 32px;
@@ -813,7 +810,8 @@ export default () => (
       }
 
       .z0H4_1ycl9dg {
-        font-size: 16px;
+        font-size: 20px;
+        margin-left: 8px;
       }
       .z0H4_mdmmr9 {
       }
@@ -867,6 +865,7 @@ export default () => (
         list-style: none;
       }
       .z0ListItem_mdmmr9 {
+        margin-left: 8px;
       }
       .z0ListItem_kewhca {
         border-bottom-width: 1px;

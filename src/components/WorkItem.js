@@ -26,8 +26,8 @@ export function WorkItem({ name, description, image, url }) {
           border: 1px solid #ddd;
         }
         .z0Box_ywo3zt {
-          padding-left: 0px;
-          padding-right: 0px;
+          padding-left: 8px;
+          padding-right: 8px;
         }
 
         .z0P_eqnk6o {
