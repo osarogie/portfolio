@@ -100,10 +100,10 @@ export default () => (
                 <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
                   <div className="z0Box_ywo3zt">
                     <h3
-                      style={{ marginBottom: 20 }}
+                      style={{ margin: 3, opacity: 0.3 }}
                       className="z0H3_16557ik z0H3_1emnpaq z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9"
                     >
-                      Nosakhare Emmanuel, Programmer in Lagos.
+                      Emmanuel Nosakhare
                     </h3>
                     <h1 className="z0H1_1o2ezep z0H1_12jqrxu z0H1_ngp8oq z0H1_1bmf5hr z0H1_35iemg z0H1_o856zb">
                       Building smarter, more people friendly systems.
@@ -241,7 +241,7 @@ export default () => (
     <style jsx global>{`
       body {
         margin: 8px;
-        background-color: #ffdbf6;
+        background-color: #f9eef6;
       }
     `}</style>
     <style jsx>{`
@@ -626,7 +626,7 @@ export default () => (
         padding-left: 32px;
         padding-right: 32px;
         padding-top: 128px;
-        padding-bottom: 128px;
+        padding-bottom: 55px;
       }
       .z0Header_hz4vw0 {
         background-color: #f0f5f8;
