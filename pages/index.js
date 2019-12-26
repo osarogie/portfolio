@@ -1,14 +1,11 @@
-import Link from 'next/link'
 import { CustomHead } from '../src/components/CustomHead'
-import Nav from '../src/components/nav'
 import { WorkItem } from '../src/components/WorkItem'
 import { SocialLink } from '../src/components/SocialLink'
-// import Logo from '../src/images/android-icon-72x72.png'
 
 export default () => (
   <div>
     <CustomHead
-      title="Nosakhare Emmanuel, Programmer in Lagos."
+      title="Nosakhare Emmanuel - Programmer in Lagos"
       description="Building smarter, more human friendly systems."
     />
     <div>
@@ -21,33 +18,25 @@ export default () => (
       >
         <div>
           <div className="jumbo">
-            <div
-              style={{
-                backgroundColor: 'rgba(0, 0, 0, 0.25098039215686274)'
-              }}
-              className=" z0Flex_1dv9ts4 z0Flex_mdmmr9 z0Flex_k206nx z0Flex_6hoen5 z0Flex_1agckgk z0Flex_1rr4jcp z0Box_1dv9ts4 z0Box_mdmmr9 z0Box_mdmmr9"
-            >
-              <div className="z0Box_1npp29g z0Box_102tqs0 z0Box_mdmmr9 z0Box_mdmmr9">
+            <div className="z0Flex_1dv9ts4 z0Flex_k206nx z0Flex_6hoen5 z0Flex_1agckgk z0Flex_1rr4jcp z0Box_1dv9ts4">
+              <div className="z0Box_1npp29g z0Box_102tqs0">
                 <div
-                  className="z0Div_mdmmr9 z0Div_mdmmr9 z0Div_1vd3drs"
+                  className="z0Div_1vd3drs"
                   style={{
                     fontSize: 20,
                     height: 48,
                     width: 48,
                     borderRadius: 32,
-                    // background:
-                    //   'url(https://avatars1.githubusercontent.com/u/34954214?s=48&v=4)'
                     borderWidth: 7,
-                    borderColor: '#fff',
                     borderStyle: 'solid'
                   }}
                 />
               </div>
 
-              <nav className="z0Nav_16e1kl6 z0Nav_mdmmr9 z0Nav_mdmmr9">
+              <nav className="z0Nav_16e1kl6">
                 <div
                   style={{ display: 'inline-block' }}
-                  className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
+                  className="z0Box_4zbkq4"
                 >
                   <a
                     href="//apps.osarogie.com"
@@ -58,7 +47,7 @@ export default () => (
                 </div>
                 <div
                   style={{ display: 'inline-block' }}
-                  className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
+                  className="z0Box_4zbkq4"
                 >
                   <a
                     href="//blog.osarogie.com"
@@ -69,7 +58,7 @@ export default () => (
                 </div>
                 {/* <div
                 style={{ display: 'inline-block' }}
-                className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
+                className="z0Box_4zbkq4"
               >
                 <a
                   href="http://thecommunity.ng"
@@ -80,7 +69,7 @@ export default () => (
               </div> */}
                 {/* <div
                 style={{display:'inline-block'}}
-                className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
+                className="z0Box_4zbkq4"
               >
                 <a
                   href="#reading"
@@ -91,7 +80,7 @@ export default () => (
               </div> */}
                 <div
                   style={{ display: 'inline-block' }}
-                  className="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"
+                  className="z0Box_4zbkq4"
                 >
                   <a
                     href="https://github.com/osarogie/"
@@ -105,25 +94,18 @@ export default () => (
             <div className="banner relative">
               <div className="wrap">&nbsp;</div>
               <header
-                style={{
-                  backgroundColor: 'rgba(0, 0, 0, 0.25098039215686274)'
-
-                  // backgroundColor:'rgba(240, 245, 248, 0.8117647058823529)',boxShadow:'1px 1px 7px -1px rgba(0, 0, 0, 0.5686274509803921)'
-                }}
-                className="relative z0Header_11vhgrl z0Header_hz4vw0 z0Header_mdmmr9"
+                style={{ backgroundColor: '#0000' }}
+                className="relative z0Header_11vhgrl z0Header_hz4vw0"
               >
                 <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
-                  <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
+                  <div className="z0Box_ywo3zt">
                     <h3
-                      style={{ color: '#fff', marginBottom: 20 }}
+                      style={{ marginBottom: 20 }}
                       className="z0H3_16557ik z0H3_1emnpaq z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9"
                     >
                       Nosakhare Emmanuel, Programmer in Lagos.
                     </h3>
-                    <h1
-                      style={{ color: '#fff' }}
-                      className="z0H1_1o2ezep z0H1_12jqrxu z0H1_ngp8oq z0H1_1bmf5hr z0H1_35iemg z0H1_o856zb"
-                    >
+                    <h1 className="z0H1_1o2ezep z0H1_12jqrxu z0H1_ngp8oq z0H1_1bmf5hr z0H1_35iemg z0H1_o856zb">
                       Building smarter, more people friendly systems.
                     </h1>
                   </div>
@@ -131,9 +113,9 @@ export default () => (
               </header>
             </div>
           </div>
-          <div className="z0Box_3ct8mo z0Box_w8x2v6 z0Box_8ctdvs z0Box_mdmmr9">
+          <div className="z0Box_3ct8mo z0Box_w8x2v6 z0Box_8ctdvs">
             <div className="z0Container_tt19w7 z0Container_1jdd6it z0Container_35iemg z0Container_6osar3">
-              <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
+              <div className="z0Box_ywo3zt">
                 <h4
                   id="work"
                   className="z0H4_1ycl9dg z0H4_mdmmr9 z0H4_35iemg z0H4_11gibmt"
@@ -146,18 +128,52 @@ export default () => (
                   name="TheCommunity"
                   url="//thecommunity.ng"
                   description="A storytellling platform"
+                  links={[
+                    {
+                      url: '//thecommunity.ng',
+                      icon: 'language'
+                    },
+                    {
+                      url:
+                        '//play.google.com/store/apps/details?id=ng.thecommunity.kovu',
+                      icon: 'googleplay'
+                    }
+                  ]}
                   image="https://img.thecommunity.ng/800x1000/ecaf1b44-3408-448a-b53a-de3183504584"
                 />
                 <WorkItem
                   name="A Plus - Academic Assistant"
                   url="//aplus.osarogie.com"
                   description="An app to help students keep track of their academicprogress"
-                  image="/gpa3.png"
+                  image="/images/gpa4.png"
+                  links={[
+                    {
+                      url: '//aplus.osarogie.com',
+                      icon: 'language'
+                    },
+                    {
+                      url:
+                        '//play.google.com/store/apps/details?id=ng.nosakhare.aplus',
+                      icon: 'googleplay'
+                    }
+                  ]}
+                />
+                <WorkItem
+                  name="Fast Klinik"
+                  description="Hospital Management made easy"
+                  url="//fastklinik-frontend.herokuapp.com"
+                  image="/images/fastklinik1.png"
+                  links={[
+                    {
+                      url: '//fastklinik-frontend.herokuapp.com',
+                      icon: 'language'
+                    }
+                  ]}
                 />
               </div>
             </div>
             <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
-              <div className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9">
+              <div className="z0Box_ywo3zt">
                 <h4
                   id="writing"
                   className="z0H4_1ycl9dg z0H4_12zrzid z0H4_35iemg z0H4_11gibmt"
@@ -186,10 +202,7 @@ export default () => (
                 </ul>
               </div>
 
-              <div
-                className="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9"
-                style={{ marginBottom: 128 }}
-              >
+              <div className="z0Box_ywo3zt" style={{ marginBottom: 128 }}>
                 <h4
                   id="writing"
                   className="z0H4_1ycl9dg z0H4_12zrzid z0H4_35iemg z0H4_11gibmt"
@@ -227,16 +240,19 @@ export default () => (
     </div>
     <style jsx global>{`
       body {
-        margin: 20px;
+        margin: 8px;
+        background-color: #ffdbf6;
       }
     `}</style>
     <style jsx>{`
-      .jumbo {
+       {
+        /* .jumbo {
         background: url(https://images.unsplash.com/photo-1535402803947-a950d5f7ae4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80);
         background-repeat: no-repeat;
         border-radius: 5px;
         overflow: hidden;
         background-size: cover;
+      } */
       }
       .banner header {
         background-size: 100% 100%;
@@ -259,8 +275,6 @@ export default () => (
         padding-right: 64px;
         padding-top: 32px;
         padding-bottom: 32px;
-      }
-      .z0Flex_mdmmr9 {
       }
       .z0Flex_k206nx {
         align-items: center;
@@ -286,12 +300,8 @@ export default () => (
       .z0Box_102tqs0 {
         width: 32px;
       }
-      .z0Div_mdmmr9 {
-      }
       .z0Div_1vd3drs {
         text-align: left;
-      }
-      .z0Svg_mdmmr9 {
       }
       .z0Svg_3h4hbk {
         background-color: undefined;
@@ -302,8 +312,6 @@ export default () => (
       }
       .z0Nav_16e1kl6 {
         margin-left: auto;
-      }
-      .z0Nav_mdmmr9 {
       }
       .z0Box_1y4iusb {
         margin-right: 32px;
@@ -340,8 +348,6 @@ export default () => (
       .z0Header_1qq5jeq {
         background-color: bg;
         color: black;
-      }
-      .z0Header_mdmmr9 {
       }
       .z0Container_gx1hqw {
         margin-left: auto;
@@ -612,7 +618,7 @@ export default () => (
         padding-bottom: 0px;
       }
       .z0NavLink_35iemg {
-        color: #fff;
+        color: inherit;
         border: 1px solid;
         padding-right: 5px;
       }
@@ -636,8 +642,8 @@ export default () => (
         color: #1d0016;
       }
       .z0Box_3ct8mo {
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 0px;
+        padding-right: 0px;
       }
       .z0Container_1jdd6it {
         margin-left: auto;
@@ -671,12 +677,6 @@ export default () => (
       .z0TextLink_35iemg {
         color: #1d0016;
       }
-      .z0Flexbox_voqzph {
-        padding-bottom: 32px;
-        padding-top: 32px;
-        padding-left: 32px;
-        padding-right: 32px;
-      }
       .z0Flexbox_h9zvmj {
         background-color: #1d0016;
       }
@@ -692,12 +692,8 @@ export default () => (
       .z0Flexbox_1lcbbl9 {
         padding-right: 16px;
       }
-      .z0Div_mdmmr9 {
-      }
       .z0Div_1vd3drs {
         text-align: left;
-      }
-      .z0Svg_mdmmr9 {
       }
       .z0Svg_3h4hbk {
         background-color: undefined;
@@ -708,8 +704,6 @@ export default () => (
       }
       .z0Nav_16e1kl6 {
         margin-left: auto;
-      }
-      .z0Nav_mdmmr9 {
       }
       .z0NavLink_tt19w7 {
         font-size: 12px;
@@ -982,9 +976,6 @@ export default () => (
         padding-left: 16px;
         padding-top: 0px;
         padding-bottom: 0px;
-      }
-      .z0NavLink_35iemg {
-        color: #fff;
       }
       .z0Header_11vhgrl {
         padding-left: 32px;

@@ -1,7 +1,9 @@
-export function WorkItem({ name, description, image, url }) {
+export function WorkItem({ name, description, image, url, links = [] }) {
+  const ThumbnailContainer = url ? 'a' : 'div'
+
   return (
-    <div className="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi z0Box_mdmmr9 z0Box_mdmmr9">
-      <a
+    <div className="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi">
+      <ThumbnailContainer
         href={url}
         title={name}
         className="z0Link_i2atn7 z0Link_mdmmr9 z0Link_35iemg z0Link_cvl0fu z0Link_1l0da3s"
@@ -14,16 +16,57 @@ export function WorkItem({ name, description, image, url }) {
             className="thumbnail z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
           />
         </div>
-        <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
-          {name}
-        </h3>
-        <p className="z0P_i2atn7 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o">
-          {description}
-        </p>
-      </a>
+      </ThumbnailContainer>
+      <div className="flex">
+        <div className="meta">
+          <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
+            {name}
+          </h3>
+          <p className="z0P_i2atn7 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o">
+            <i>{description}</i>
+          </p>
+        </div>
+        {links.map(({ url, icon, size = 25 }, i) => (
+          <a href={url} className="link" key={i}>
+            <img
+              alt="link"
+              src={`//icon.now.sh/${icon}/000000/${size}`}
+              className="z0Img_mdmmr9 z0Img_nw324o"
+            />
+          </a>
+        ))}
+      </div>
       <style jsx>{`
+        .meta {
+          flex: 1;
+          margin-left: 16px;
+        }
+        .link {
+          display: block;
+          line-height: 50px;
+          margin-right: 16px;
+          height: 50px;
+          width: 50px;
+          border: 1px solid #d6b2b2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 25px;
+          transition: border-color 0.25s ease-in;
+        }
+        .link:hover {
+          border-color: #000;
+        }
+        .flex {
+          display: flex;
+          min-height: 140px;
+        }
         .thumbnail {
           border: 1px solid #ddd;
+          transition: border-color 0.25s ease-in;
+        }
+        .thumbnail:hover {
+          border-color: #000;
         }
         .z0Box_ywo3zt {
           padding-left: 8px;
@@ -41,6 +84,7 @@ export function WorkItem({ name, description, image, url }) {
         }
         .z0P_i2atn7 {
           font-size: 14px;
+          color: #555;
         }
         .z0H3_35iemg {
           color: #1d0016;
@@ -74,7 +118,7 @@ export function WorkItem({ name, description, image, url }) {
         }
         .z0H3_1u1o96 {
           margin-bottom: 0px;
-          margin-top: 16px;
+          margin-top: 0px;
         }
         .z0H3_16557ik {
           font-size: 20px;
@@ -126,15 +170,11 @@ export function WorkItem({ name, description, image, url }) {
         .z0Link_i2atn7 {
           font-size: 14px;
         }
-        .z0Box_mdmmr9 {
-        }
-
         .z0Link_35iemg {
           color: #1d0016;
         }
 
         .z0Link_cvl0fu {
-          border-bottom: 1px solid #aaa;
           margin-bottom: 20px;
           display: block;
           font-weight: bold;
