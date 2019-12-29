@@ -1,43 +1,42 @@
 {
   "name": "portfolio",
   "rewrites": [
-    { "source": "/apps/aplus/(.*)", "destination": "https://aplus.osarogie.com/$1" },
+    {
+      "source": "/apps/aplus/(.*)",
+      "destination": "https://aplus.osarogie.com/$1"
+    },
     {
       "source": "/service-worker.js(.*)",
-      "destination": "/_next/static/service-worker.js",
-      "headers": {
-        "cache-control": "public, max-age=43200, immutable",
-        "Service-Worker-Allowed": "/"
-      }
+      "destination": "/_next/static/service-worker.js"
     }
   ],
   "headers": [
     {
       "source": "/service-worker.js",
-      "headers" : [
+      "headers": [
         {
-          "key" : "Cache-Control",
-          "value" : "public, max-age=0, must-revalidate"
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
         }
       ]
     }
   ],
-  {
-    "source": "/(.*)",
-    "headers" : [
-      {
-        "key" : "X-Content-Type-Options",
-        "value" : "nosniff"
-      },
-      {
-        "key" : "X-Frame-Options",
-        "value" : "DENY"
-      },
-      {
-        "key" : "X-XSS-Protection",
-        "value" : "1; mode=block"
-      }
-    ]
-  },
   "version": 2
 }
