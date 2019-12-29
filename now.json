@@ -10,6 +10,9 @@
       }
     }
   ],
+  "rewrites": [
+    { "source": "/apps/aplus/(.*)", "destination": "https://aplus.osarogie.com/$1" }
+  ],
   "builds": [
     {
       "src": "next.config.js",
