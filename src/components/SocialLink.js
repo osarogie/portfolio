@@ -6,7 +6,7 @@ export function SocialLink({ href, icon, color = '000000', size = 16 }) {
     >
       <img
         src={`//icon.now.sh/${icon}/${color}/${size}`}
-        className="z0Img_mdmmr9 z0Img_mdmmr9 z0Img_nw324o"
+        className="z0Img_nw324o"
       />
       <style jsx>{`
         .z0TextLink_hr1it {

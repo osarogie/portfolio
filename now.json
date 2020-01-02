@@ -1,19 +1,41 @@
 {
   "name": "portfolio",
-  "routes": [
+  "rewrites": [
     {
-      "src": "^/service-worker.js$",
-      "dest": "/_next/static/service-worker.js",
-      "headers": {
-        "cache-control": "public, max-age=43200, immutable",
-        "Service-Worker-Allowed": "/"
-      }
+      "source": "/apps/aplus/(.*)",
+      "destination": "https://aplus.osarogie.com/$1"
+    },
+    {
+      "source": "/service-worker.js(.*)",
+      "destination": "/_next/static/service-worker.js"
     }
   ],
-  "builds": [
+  "headers": [
     {
-      "src": "next.config.js",
-      "use": "@now/next"
+      "source": "/service-worker.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
     }
   ],
   "version": 2
