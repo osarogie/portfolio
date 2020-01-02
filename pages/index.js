@@ -99,10 +99,7 @@ export default () => (
               >
                 <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
                   <div className="z0Box_ywo3zt">
-                    <h3
-                      style={{ margin: 3, opacity: 0.3 }}
-                      className="z0H3_16557ik z0H3_1emnpaq z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9"
-                    >
+                    <h3 className="z0H3_16557ik z0H3_1emnpaq z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
                       Emmanuel Nosakhare
                     </h3>
                     <h1 className="z0H1_1o2ezep z0H1_12jqrxu z0H1_ngp8oq z0H1_1bmf5hr z0H1_35iemg z0H1_o856zb">
@@ -202,7 +199,7 @@ export default () => (
                 </ul>
               </div>
 
-              <div className="z0Box_ywo3zt" style={{ marginBottom: 128 }}>
+              <div className="z0Box_ywo3zt">
                 <h4
                   id="writing"
                   className="z0H4_1ycl9dg z0H4_12zrzid z0H4_35iemg z0H4_11gibmt"
@@ -753,6 +750,8 @@ export default () => (
       }
       .z0H3_16557ik {
         font-size: 20px;
+        margin: 3px;
+        opacity: 0.3;
       }
       .z0H3_1emnpaq {
         margin-bottom: 0px;
@@ -977,12 +976,6 @@ export default () => (
         padding-top: 0px;
         padding-bottom: 0px;
       }
-      .z0Header_11vhgrl {
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 128px;
-        padding-bottom: 128px;
-      }
       .z0Header_hz4vw0 {
         background-color: #f0f5f8;
         color: #1d0016;
@@ -1036,8 +1029,6 @@ export default () => (
       .z0Flexbox_voqzph {
         padding-bottom: 32px;
         padding-top: 32px;
-        padding-left: 32px;
-        padding-right: 32px;
       }
       .z0Flexbox_h9zvmj {
         background-color: #1d0016;
@@ -1052,6 +1043,31 @@ export default () => (
         padding-left: 0px;
         padding-top: 4px;
         padding-bottom: 4px;
+      }
+      .z0Box_ywo3zt:last-child {
+        margin-bottom: 128px;
+      }
+
+      @media screen and (max-width: 500px) {
+        .z0Header_11vhgrl {
+          padding-left: 11px;
+          padding-right: 11px;
+          padding-top: 49px;
+          padding-bottom: 20px;
+        }
+        .z0H3_16557ik {
+          margin: 1px;
+        }
+        .z0Box_ywo3zt:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @media screen and (min-width: 500px) {
+        .z0Flexbox_voqzph {
+          padding-left: 32px;
+          padding-right: 32px;
+        }
       }
     `}</style>
   </div>
