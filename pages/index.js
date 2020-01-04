@@ -145,7 +145,7 @@ export default () => (
                   image="/images/gpa4.png"
                   links={[
                     {
-                      url: '//aplus.osarogie.com',
+                      url: '//apps.osarogie.com/aplus',
                       icon: 'language'
                     },
                     {
