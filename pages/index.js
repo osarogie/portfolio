@@ -140,7 +140,7 @@ export default () => (
                 />
                 <WorkItem
                   name="A Plus - Academic Assistant"
-                  url="//aplus.osarogie.com"
+                  url="//apps.osarogie.com/aplus"
                   description="An app to help students keep track of their academicprogress"
                   image="/images/gpa4.png"
                   links={[
