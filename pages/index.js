@@ -167,6 +167,18 @@ export default () => (
                     }
                   ]}
                 />
+                <WorkItem
+                  name="GGivers"
+                  description="Offerings paid easy with a seamless click"
+                  url="//app.ggivers.net"
+                  image="/images/ggivers.png"
+                  links={[
+                    {
+                      url: '//app.ggivers.net',
+                      icon: 'language'
+                    }
+                  ]}
+                />
               </div>
             </div>
             <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
