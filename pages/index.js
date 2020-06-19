@@ -5,7 +5,7 @@ import { SocialLink } from '../src/components/SocialLink'
 export default () => (
   <div>
     <CustomHead
-      title="Nosakhare Emmanuel - Programmer in Lagos"
+      title="Emmanuel Nosakhare - Programmer in Lagos"
       description="Building smarter, more human friendly systems."
     />
     <div>
@@ -39,45 +39,12 @@ export default () => (
                   className="z0Box_4zbkq4"
                 >
                   <a
-                    href="//apps.osarogie.com"
-                    className="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09"
-                  >
-                    Apps
-                  </a>
-                </div>
-                <div
-                  style={{ display: 'inline-block' }}
-                  className="z0Box_4zbkq4"
-                >
-                  <a
-                    href="//blog.osarogie.com"
+                    href="//thecomunity.ng/nosa"
                     className="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09"
                   >
                     Blog
                   </a>
                 </div>
-                {/* <div
-                style={{ display: 'inline-block' }}
-                className="z0Box_4zbkq4"
-              >
-                <a
-                  href="http://thecommunity.ng"
-                  className="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09"
-                >
-                  TheCommunity
-                </a>
-              </div> */}
-                {/* <div
-                style={{display:'inline-block'}}
-                className="z0Box_4zbkq4"
-              >
-                <a
-                  href="#reading"
-                  className="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09"
-                >
-                  Reading
-                </a>
-              </div> */}
                 <div
                   style={{ display: 'inline-block' }}
                   className="z0Box_4zbkq4"
@@ -220,7 +187,7 @@ export default () => (
                 </h4>
                 <img
                   src="//ghchart.rshah.org/409ba5/osarogie"
-                  alt="Nosa's Github chart"
+                  alt="Emmanuel's Github chart"
                   style={{ height: 'auto', width: '100%' }}
                 />
               </div>
@@ -231,12 +198,7 @@ export default () => (
             className="z0Flexbox_voqzph z0Flexbox_w8x2v6 z0Flexbox_155cfuf"
           >
             <div className="z0Flexbox_1j8enju z0Flexbox_i86xbc z0Flexbox_mdmmr9 z0Flexbox_155cfuf">
-              <SocialLink href="//twitter.com/thenosakhare" icon="twitter" />
               <SocialLink href="//github.com/osarogie" icon="github" />
-              <SocialLink
-                href="//instagram.com/the.art.spirit"
-                icon="instagram"
-              />
               <SocialLink
                 href="mailto:nonreactiv@gmail.com"
                 icon="mail"
