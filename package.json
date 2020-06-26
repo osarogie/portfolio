@@ -1,5 +1,6 @@
 {
   "name": "nosakhare",
+  "private": false,
   "scripts": {
     "dev": "next",
     "build": "next build",
