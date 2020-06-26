@@ -1,6 +1,6 @@
-import { CustomHead } from '../src/components/CustomHead'
-import { WorkItem } from '../src/components/WorkItem'
-import { SocialLink } from '../src/components/SocialLink'
+import { CustomHead } from "../src/components/CustomHead"
+import { WorkItem } from "../src/components/WorkItem"
+import { SocialLink } from "../src/components/SocialLink"
 
 export default () => (
   <div>
@@ -11,9 +11,9 @@ export default () => (
     <div>
       <div
         style={{
-          fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+          fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
           lineHeight: 1.5,
-          color: '#000'
+          color: "#000",
         }}
       >
         <div>
@@ -28,25 +28,25 @@ export default () => (
                     width: 48,
                     borderRadius: 32,
                     borderWidth: 7,
-                    borderStyle: 'solid'
+                    borderStyle: "solid",
                   }}
                 />
               </div>
 
               <nav className="z0Nav_16e1kl6">
                 <div
-                  style={{ display: 'inline-block' }}
+                  style={{ display: "inline-block" }}
                   className="z0Box_4zbkq4"
                 >
                   <a
-                    href="//thecomunity.ng/nosa"
+                    href="//thecommunity.ng/nosa"
                     className="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09"
                   >
                     Blog
                   </a>
                 </div>
                 <div
-                  style={{ display: 'inline-block' }}
+                  style={{ display: "inline-block" }}
                   className="z0Box_4zbkq4"
                 >
                   <a
@@ -61,7 +61,7 @@ export default () => (
             <div className="banner relative">
               <div className="wrap">&nbsp;</div>
               <header
-                style={{ backgroundColor: '#0000' }}
+                style={{ backgroundColor: "#0000" }}
                 className="relative z0Header_11vhgrl z0Header_hz4vw0"
               >
                 <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
@@ -94,14 +94,14 @@ export default () => (
                   description="A storytellling platform"
                   links={[
                     {
-                      url: '//thecommunity.ng',
-                      icon: 'language'
+                      url: "//thecommunity.ng",
+                      icon: "language",
                     },
                     {
                       url:
-                        '//play.google.com/store/apps/details?id=ng.thecommunity.kovu',
-                      icon: 'googleplay'
-                    }
+                        "//play.google.com/store/apps/details?id=ng.thecommunity.kovu",
+                      icon: "googleplay",
+                    },
                   ]}
                   image="https://img.thecommunity.ng/800x1000/ecaf1b44-3408-448a-b53a-de3183504584"
                 />
@@ -112,14 +112,14 @@ export default () => (
                   image="/images/gpa4.png"
                   links={[
                     {
-                      url: '//apps.osarogie.com/aplus',
-                      icon: 'language'
+                      url: "//apps.osarogie.com/aplus",
+                      icon: "language",
                     },
                     {
                       url:
-                        '//play.google.com/store/apps/details?id=ng.nosakhare.aplus',
-                      icon: 'googleplay'
-                    }
+                        "//play.google.com/store/apps/details?id=ng.nosakhare.aplus",
+                      icon: "googleplay",
+                    },
                   ]}
                 />
                 <WorkItem
@@ -129,9 +129,9 @@ export default () => (
                   image="/images/fastklinik1.png"
                   links={[
                     {
-                      url: '//fastklinik-frontend.herokuapp.com',
-                      icon: 'language'
-                    }
+                      url: "//fastklinik-frontend.herokuapp.com",
+                      icon: "language",
+                    },
                   ]}
                 />
                 <WorkItem
@@ -141,9 +141,9 @@ export default () => (
                   image="/images/ggivers.png"
                   links={[
                     {
-                      url: '//app.ggivers.net',
-                      icon: 'language'
-                    }
+                      url: "//app.ggivers.net",
+                      icon: "language",
+                    },
                   ]}
                 />
               </div>
@@ -188,7 +188,7 @@ export default () => (
                 <img
                   src="//ghchart.rshah.org/409ba5/osarogie"
                   alt="Emmanuel's Github chart"
-                  style={{ height: 'auto', width: '100%' }}
+                  style={{ height: "auto", width: "100%" }}
                 />
               </div>
             </div>
@@ -251,7 +251,7 @@ export default () => (
         align-items: center;
       }
       .z0Flex_6hoen5 {
-        justify-content: 'left';
+        justify-content: "left";
       }
       .z0Flex_1agckgk {
         flex-direction: row;
@@ -596,8 +596,8 @@ export default () => (
       .z0Header_11vhgrl {
         padding-left: 32px;
         padding-right: 32px;
-        padding-top: 128px;
-        padding-bottom: 55px;
+        padding-top: 90px;
+        padding-bottom: 0px;
       }
       .z0Header_hz4vw0 {
         background-color: #f0f5f8;
