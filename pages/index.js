@@ -594,9 +594,9 @@ export default () => (
         padding-right: 5px;
       }
       .z0Header_11vhgrl {
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 90px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 50px;
         padding-bottom: 0px;
       }
       .z0Header_hz4vw0 {
@@ -619,7 +619,7 @@ export default () => (
       .z0Container_1jdd6it {
         margin-left: auto;
         margin-right: auto;
-        padding-top: 64px;
+        padding-top: 0;
         padding-left: 8px;
         padding-right: 8px;
       }
@@ -965,13 +965,6 @@ export default () => (
       }
       .z0H1_35iemg {
         color: #1d0016;
-      }
-      .z0Container_1jdd6it {
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 64px;
-        padding-left: 8px;
-        padding-right: 8px;
       }
       .z0Container_35iemg {
         color: #1d0016;
