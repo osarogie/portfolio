@@ -125,14 +125,7 @@ export default () => (
                 <WorkItem
                   name="Fast Klinik"
                   description="Hospital Management made easy"
-                  url="//fastklinik-frontend.herokuapp.com"
                   image="/images/fastklinik1.png"
-                  links={[
-                    {
-                      url: "//fastklinik-frontend.herokuapp.com",
-                      icon: "language",
-                    },
-                  ]}
                 />
                 <WorkItem
                   name="GGivers"

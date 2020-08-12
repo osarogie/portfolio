@@ -1,5 +1,5 @@
 export function WorkItem({ name, description, image, url, links = [] }) {
-  const ThumbnailContainer = url ? 'a' : 'div'
+  const ThumbnailContainer = url ? "a" : "div"
 
   return (
     <div className="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi">
@@ -11,7 +11,7 @@ export function WorkItem({ name, description, image, url, links = [] }) {
         <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
           <div
             style={{
-              backgroundImage: `url(${image})`
+              backgroundImage: `url(${image})`,
             }}
             className="thumbnail z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
           />
@@ -30,7 +30,7 @@ export function WorkItem({ name, description, image, url, links = [] }) {
           <a href={url} className="link" key={i}>
             <img
               alt="link"
-              src={`//icon.now.sh/${icon}/000000/${size}`}
+              src={`//microicon-bki71i39a.vercel.app/${icon}/000000/${size}`}
               className="z0Img_mdmmr9 z0Img_nw324o"
             />
           </a>
