@@ -123,6 +123,18 @@ export default () => (
                   ]}
                 />
                 <WorkItem
+                  name="SmartHarvest"
+                  url="//smartharvest.vercel.app"
+                  description="Driving agricultural innovation"
+                  image="/images/smartharvest1.png"
+                  links={[
+                    {
+                      url: "//smartharvest.vercel.app",
+                      icon: "language",
+                    },
+                  ]}
+                />
+                <WorkItem
                   name="Fast Klinik"
                   description="Hospital Management made easy"
                   image="/images/fastklinik1.png"
