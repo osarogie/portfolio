@@ -1,5 +1,5 @@
 {
-  "name": "nosakhare",
+  "name": "osarogie",
   "private": false,
   "scripts": {
     "dev": "next",
@@ -9,9 +9,9 @@
     "test": "echo 'No tests yet'"
   },
   "dependencies": {
-    "next": "^9.3.4",
+    "next": "^10.0.0",
     "next-offline": "^5.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
