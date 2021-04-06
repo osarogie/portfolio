@@ -2,7 +2,7 @@ import { CustomHead } from "../src/components/CustomHead"
 import { WorkItem } from "../src/components/WorkItem"
 import { SocialLink } from "../src/components/SocialLink"
 
-export default () => (
+const Index = () => (
   <div>
     <CustomHead
       title="Emmanuel Nosakhare - Programmer in Lagos"
@@ -13,7 +13,7 @@ export default () => (
         style={{
           fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
           lineHeight: 1.5,
-          color: "#000",
+          color: "#fff",
         }}
       >
         <div>
@@ -32,31 +32,6 @@ export default () => (
                   }}
                 />
               </div>
-
-              <nav className="z0Nav_16e1kl6">
-                <div
-                  style={{ display: "inline-block" }}
-                  className="z0Box_4zbkq4"
-                >
-                  <a
-                    href="//thecommunity.ng/nosa"
-                    className="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09"
-                  >
-                    Blog
-                  </a>
-                </div>
-                <div
-                  style={{ display: "inline-block" }}
-                  className="z0Box_4zbkq4"
-                >
-                  <a
-                    href="https://github.com/osarogie/"
-                    className="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09"
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </nav>
             </div>
             <div className="banner relative">
               <div className="wrap">&nbsp;</div>
@@ -124,12 +99,12 @@ export default () => (
                 />
                 <WorkItem
                   name="SmartHarvest"
-                  url="//smartharvest.vercel.app"
+                  url="//smartharvest.africa"
                   description="Driving agricultural innovation"
                   image="/images/smartharvest1.png"
                   links={[
                     {
-                      url: "//smartharvest.vercel.app",
+                      url: "//smartharvest.africa",
                       icon: "language",
                     },
                   ]}
@@ -182,20 +157,6 @@ export default () => (
                   </li>
                 </ul>
               </div>
-
-              <div className="z0Box_ywo3zt">
-                <h4
-                  id="writing"
-                  className="z0H4_1ycl9dg z0H4_12zrzid z0H4_35iemg z0H4_11gibmt"
-                >
-                  GitHub Activity
-                </h4>
-                <img
-                  src="//ghchart.rshah.org/409ba5/osarogie"
-                  alt="Emmanuel's Github chart"
-                  style={{ height: "auto", width: "100%" }}
-                />
-              </div>
             </div>
           </div>
           <div
@@ -217,7 +178,7 @@ export default () => (
     <style jsx global>{`
       body {
         margin: 8px;
-        background-color: #f9eef6;
+        background-color: #100f0f;
       }
     `}</style>
     <style jsx>{`
@@ -286,19 +247,8 @@ export default () => (
       .z0Svg_f2dgne {
         transition: color 0.25s ease-in;
       }
-      .z0Nav_16e1kl6 {
-        margin-left: auto;
-      }
       .z0Box_1y4iusb {
         margin-right: 32px;
-      }
-      .z0NavLink_tt19w7 {
-        font-size: 12px;
-      }
-      @media screen and (min-width: 40em) {
-        .z0NavLink_975b7n {
-          font-size: 14px;
-        }
       }
       .z0NavLink_c65ziq {
         padding-left: 32px;
@@ -307,13 +257,6 @@ export default () => (
       }
       .z0NavLink_1wdoa1p {
         color: black;
-      }
-      .z0NavLink_1bkox09 {
-        display: inline-block;
-        font-weight: bold;
-        letter-spacing: 0.05em;
-        text-decoration: none;
-        text-transform: uppercase;
       }
       .z0Header_126pkt5 {
         padding-left: 64px;
@@ -360,9 +303,6 @@ export default () => (
         }
       }
       @media screen and (max-width: 320px) {
-        .z0NavLink_35iemg {
-          font-size: 9px !important;
-        }
         .z0Header_11vhgrl {
           padding-left: 0 !important;
           padding-right: 0 !important;
@@ -405,9 +345,6 @@ export default () => (
       }
       .z0H4_1wdoa1p {
         color: black;
-      }
-      .z0H4_11gibmt {
-        text-transform: uppercase;
       }
       .z0Link_iisq1y {
         padding-left: undefined;
@@ -468,7 +405,9 @@ export default () => (
       }
       .z0ListItem_kewhca {
         border-bottom-width: 1px;
+        max-width: 800px;
         border-bottom-style: solid;
+        border-bottom-color: #444;
       }
       .z0TextLink_1b8l9c0 {
         font-size: 24px;
@@ -585,19 +524,6 @@ export default () => (
         padding-top: 16px;
         padding-bottom: 16px;
       }
-      .z0Box_4zbkq4 {
-        margin-right: 16px;
-      }
-      .z0NavLink_1nkieb7 {
-        padding-left: 16px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-      }
-      .z0NavLink_35iemg {
-        color: inherit;
-        border: 1px solid;
-        padding-right: 5px;
-      }
       .z0Header_11vhgrl {
         padding-left: 8px;
         padding-right: 8px;
@@ -606,7 +532,7 @@ export default () => (
       }
       .z0Header_hz4vw0 {
         background-color: #f0f5f8;
-        color: #1d0016;
+        color: #929292;
       }
       .z0Container_bpfrzz {
         margin-left: auto;
@@ -615,7 +541,7 @@ export default () => (
         padding-right: 8px;
       }
       .z0H1_35iemg {
-        color: #1d0016;
+        color: #929292;
       }
       .z0Box_3ct8mo {
         padding-left: 0px;
@@ -629,10 +555,7 @@ export default () => (
         padding-right: 8px;
       }
       .z0Container_35iemg {
-        color: #1d0016;
-      }
-      .z0H4_35iemg {
-        color: #1d0016;
+        color: #929292;
       }
       .z0H3_1oe3gjs {
         margin-bottom: 0px;
@@ -644,17 +567,14 @@ export default () => (
       .z0Box_6dz4ec {
         margin-top: 32px;
       }
-      .z0H4_12zrzid {
-        margin-top: 64px;
-      }
       .z0Ul_m2eadc {
         padding-left: 0px;
       }
       .z0TextLink_35iemg {
-        color: #1d0016;
+        color: #929292;
       }
       .z0Flexbox_h9zvmj {
-        background-color: #1d0016;
+        background-color: #929292;
       }
       .z0Flexbox_1j8enju {
         padding-left: 16px;
@@ -678,17 +598,6 @@ export default () => (
       .z0Svg_f2dgne {
         transition: color 0.25s ease-in;
       }
-      .z0Nav_16e1kl6 {
-        margin-left: auto;
-      }
-      .z0NavLink_tt19w7 {
-        font-size: 12px;
-      }
-      @media screen and (min-width: 40em) {
-        .z0NavLink_975b7n {
-          font-size: 14px;
-        }
-      }
       .z0NavLink_c65ziq {
         padding-left: 32px;
         padding-top: 0px;
@@ -696,13 +605,6 @@ export default () => (
       }
       .z0NavLink_1wdoa1p {
         color: black;
-      }
-      .z0NavLink_1bkox09 {
-        display: inline-block;
-        font-weight: bold;
-        letter-spacing: 0.05em;
-        text-decoration: none;
-        text-transform: uppercase;
       }
       .z0Header_126pkt5 {
         padding-left: 64px;
@@ -790,9 +692,6 @@ export default () => (
       .z0H4_1wdoa1p {
         color: black;
       }
-      .z0H4_11gibmt {
-        text-transform: uppercase;
-      }
       .z0Flexbox_mdmmr9 {
       }
       .z0Link_mdmmr9 {
@@ -838,10 +737,6 @@ export default () => (
       }
       .z0ListItem_mdmmr9 {
         margin-left: 8px;
-      }
-      .z0ListItem_kewhca {
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
       }
       .z0TextLink_1ycl9dg {
         font-size: 16px;
@@ -950,14 +845,9 @@ export default () => (
       .z0LogoLab_nw324o {
         display: block;
       }
-      .z0NavLink_1nkieb7 {
-        padding-left: 16px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-      }
       .z0Header_hz4vw0 {
         background-color: #f0f5f8;
-        color: #1d0016;
+        color: #929292;
       }
       .z0Container_bpfrzz {
         margin-left: auto;
@@ -966,24 +856,18 @@ export default () => (
         padding-right: 8px;
       }
       .z0H3_35iemg {
-        color: #1d0016;
+        color: #929292;
       }
       .z0H1_35iemg {
-        color: #1d0016;
+        color: #929292;
       }
       .z0Container_35iemg {
-        color: #1d0016;
-      }
-      .z0H4_35iemg {
-        color: #1d0016;
+        color: #929292;
       }
       @media screen and (min-width: 52em) {
         .z0Flexbox_199tkwx {
           margin-top: 32px;
         }
-      }
-      .z0H4_12zrzid {
-        margin-top: 64px;
       }
       .z0Ul_m2eadc {
         padding-left: 0px;
@@ -996,14 +880,14 @@ export default () => (
         padding-bottom: 4px;
       }
       .z0TextLink_35iemg {
-        color: #1d0016;
+        color: #929292;
       }
       .z0Flexbox_voqzph {
         padding-bottom: 32px;
         padding-top: 32px;
       }
       .z0Flexbox_h9zvmj {
-        background-color: #1d0016;
+        background-color: #929292;
       }
       .z0Flexbox_1j8enju {
         padding-left: 16px;
@@ -1044,3 +928,5 @@ export default () => (
     `}</style>
   </div>
 )
+
+export default Index

@@ -1,4 +1,4 @@
-export function SocialLink({ href, icon, color = "000000", size = 16 }) {
+export function SocialLink({ href, icon, color = "d6b2b2", size = 16 }) {
   return (
     <a
       href={href}

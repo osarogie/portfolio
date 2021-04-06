@@ -4,22 +4,9 @@
     {
       "source": "/apps/aplus/(.*)",
       "destination": "https://aplus.osarogie.com/$1"
-    },
-    {
-      "source": "/service-worker.js(.*)",
-      "destination": "/_next/static/service-worker.js"
     }
   ],
   "headers": [
-    {
-      "source": "/service-worker.js",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
     {
       "source": "/(.*)",
       "headers": [

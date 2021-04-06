@@ -30,7 +30,7 @@ export function WorkItem({ name, description, image, url, links = [] }) {
           <a href={url} className="link" key={i}>
             <img
               alt="link"
-              src={`//microicon-bki71i39a.vercel.app/${icon}/000000/${size}`}
+              src={`//microicon-bki71i39a.vercel.app/${icon}/555555/${size}`}
               className="z0Img_mdmmr9 z0Img_nw324o"
             />
           </a>
@@ -47,7 +47,7 @@ export function WorkItem({ name, description, image, url, links = [] }) {
           margin-right: 16px;
           height: 50px;
           width: 50px;
-          border: 1px solid #d6b2b2;
+          border: 1px solid #222;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -55,18 +55,18 @@ export function WorkItem({ name, description, image, url, links = [] }) {
           transition: border-color 0.25s ease-in;
         }
         .link:hover {
-          border-color: #000;
+          border-color: #444;
         }
         .flex {
           display: flex;
           min-height: 140px;
         }
         .thumbnail {
-          border: 1px solid #ddd;
+          border: 1px solid #222;
           transition: border-color 0.25s ease-in;
         }
         .thumbnail:hover {
-          border-color: #000;
+          border-color: #444;
         }
         .z0Box_ywo3zt {
           padding-left: 8px;
@@ -87,7 +87,7 @@ export function WorkItem({ name, description, image, url, links = [] }) {
           color: #555;
         }
         .z0H3_35iemg {
-          color: #1d0016;
+          color: #afaeae;
         }
         .z0AspectRatio_dvi25k {
           border-radius: 0;
@@ -171,7 +171,7 @@ export function WorkItem({ name, description, image, url, links = [] }) {
           font-size: 14px;
         }
         .z0Link_35iemg {
-          color: #1d0016;
+          color: #afaeae;
         }
 
         .z0Link_cvl0fu {
