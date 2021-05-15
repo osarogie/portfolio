@@ -1,27 +1,26 @@
 import { CustomHead } from "../src/components/CustomHead"
 import { WorkItem } from "../src/components/WorkItem"
 import { SocialLink } from "../src/components/SocialLink"
+import Image from "next/image"
 
 const Index = () => (
   <div>
     <CustomHead
-      title="Emmanuel Nosakhare - Programmer in Lagos"
+      title="Emmanuel Nosakhare"
       description="Building smarter, more human friendly systems."
     />
-    <div>
-      <div
-        style={{
-          fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
-          lineHeight: 1.5,
-          color: "#fff",
-        }}
-      >
+    <div className="relative bg-white">
+      <Image
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23fafafa' href='%23s' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='2'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E"
+        layout="fill"
+        className="filter blur-lg absolute"
+      />
+      <div className="relative z-30 text-white font-koho">
         <div>
           <div className="jumbo">
             <div className="z0Flex_1dv9ts4 z0Flex_k206nx z0Flex_6hoen5 z0Flex_1agckgk z0Flex_1rr4jcp z0Box_1dv9ts4">
-              <div className="z0Box_1npp29g z0Box_102tqs0">
+              <div className="w-8">
                 <div
-                  className="z0Div_1vd3drs"
                   style={{
                     fontSize: 20,
                     height: 48,
@@ -30,23 +29,21 @@ const Index = () => (
                     borderWidth: 7,
                     borderStyle: "solid",
                   }}
+                  className="text-xl bg-gray-400 bg-opacity-50 opacity-80"
                 />
               </div>
             </div>
             <div className="banner relative">
               <div className="wrap">&nbsp;</div>
-              <header
-                style={{ backgroundColor: "#0000" }}
-                className="relative z0Header_11vhgrl z0Header_hz4vw0"
-              >
-                <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
+              <header className="relative z0Header_11vhgrl">
+                <div className="z0Container_bpfrzz z0Container_6osar3">
                   <div className="z0Box_ywo3zt">
-                    <h3 className="z0H3_16557ik z0H3_1emnpaq z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
-                      Emmanuel Nosakhare
-                    </h3>
                     <h1 className="z0H1_1o2ezep z0H1_12jqrxu z0H1_ngp8oq z0H1_1bmf5hr z0H1_35iemg z0H1_o856zb">
-                      Building smarter, more people friendly systems.
+                      Emmanuel Nosakhare
                     </h1>
+                    <h3 className="z0H3_16557ik z0H3_1emnpaq text-gray-800 z0H3_x1yig9 z0H3_mdmmr9">
+                      Building smarter, more people friendly systems.
+                    </h3>
                   </div>
                 </div>
               </header>
@@ -57,12 +54,36 @@ const Index = () => (
               <div className="z0Box_ywo3zt">
                 <h4
                   id="work"
-                  className="z0H4_1ycl9dg z0H4_mdmmr9 z0H4_35iemg z0H4_11gibmt"
+                  className="z0H4_1ycl9dg z0H4_mdmmr9 z0H4_35iemg z0H4_11gibmt mb-5"
                 >
                   Work
                 </h4>
               </div>
               <div className="z0Flexbox_mdmmr9 z0Flexbox_mdmmr9 z0Flexbox_155cfuf">
+                <WorkItem
+                  name="SmartHarvest"
+                  url="//smartharvest.africa"
+                  description="Driving agricultural innovation"
+                  image="/images/smartharvest2.png"
+                  links={[
+                    {
+                      url: "//smartharvest.africa",
+                      icon: "language",
+                    },
+                  ]}
+                />
+                <WorkItem
+                  name="GGivers"
+                  description="Offerings paid easy with a seamless click"
+                  url="//www.ggivers.net"
+                  image="/images/ggivers.png"
+                  links={[
+                    {
+                      url: "//www.ggivers.net",
+                      icon: "language",
+                    },
+                  ]}
+                />
                 <WorkItem
                   name="TheCommunity"
                   url="//thecommunity.ng"
@@ -73,8 +94,7 @@ const Index = () => (
                       icon: "language",
                     },
                     {
-                      url:
-                        "//play.google.com/store/apps/details?id=ng.thecommunity.kovu",
+                      url: "//play.google.com/store/apps/details?id=ng.thecommunity.kovu",
                       icon: "googleplay",
                     },
                   ]}
@@ -91,21 +111,8 @@ const Index = () => (
                       icon: "language",
                     },
                     {
-                      url:
-                        "//play.google.com/store/apps/details?id=ng.nosakhare.aplus",
+                      url: "//play.google.com/store/apps/details?id=ng.nosakhare.aplus",
                       icon: "googleplay",
-                    },
-                  ]}
-                />
-                <WorkItem
-                  name="SmartHarvest"
-                  url="//smartharvest.africa"
-                  description="Driving agricultural innovation"
-                  image="/images/smartharvest1.png"
-                  links={[
-                    {
-                      url: "//smartharvest.africa",
-                      icon: "language",
                     },
                   ]}
                 />
@@ -114,21 +121,9 @@ const Index = () => (
                   description="Hospital Management made easy"
                   image="/images/fastklinik1.png"
                 />
-                <WorkItem
-                  name="GGivers"
-                  description="Offerings paid easy with a seamless click"
-                  url="//app.ggivers.net"
-                  image="/images/ggivers.png"
-                  links={[
-                    {
-                      url: "//app.ggivers.net",
-                      icon: "language",
-                    },
-                  ]}
-                />
               </div>
             </div>
-            <div className="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3">
+            <div className="z0Container_bpfrzz z0Container_6osar3">
               <div className="z0Box_ywo3zt">
                 <h4
                   id="writing"
@@ -175,22 +170,7 @@ const Index = () => (
         </div>
       </div>
     </div>
-    <style jsx global>{`
-      body {
-        margin: 8px;
-        background-color: #100f0f;
-      }
-    `}</style>
     <style jsx>{`
-       {
-        /* .jumbo {
-        background: url(https://images.unsplash.com/photo-1535402803947-a950d5f7ae4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80);
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        overflow: hidden;
-        background-size: cover;
-      } */
-      }
       .banner header {
         background-size: 100% 100%;
       }
@@ -198,8 +178,6 @@ const Index = () => (
         position: absolute;
         width: 100%;
         height: 100%;
-        // background-color: #c1b4b4;
-        // background-image: url(https://avatars1.githubusercontent.com/u/34954214?s=200&v=4)
       }
       .relative {
         position: relative;
@@ -231,19 +209,6 @@ const Index = () => (
         padding-top: 32px;
         padding-bottom: 32px;
       }
-      .z0Box_1npp29g {
-        margin-right: auto;
-      }
-      .z0Box_102tqs0 {
-        width: 32px;
-      }
-      .z0Div_1vd3drs {
-        text-align: left;
-      }
-      .z0Svg_3h4hbk {
-        background-color: undefined;
-        color: undefined;
-      }
       .z0Svg_f2dgne {
         transition: color 0.25s ease-in;
       }
@@ -264,17 +229,11 @@ const Index = () => (
         padding-top: 6px;
         padding-bottom: 6px;
       }
-      .z0Header_1qq5jeq {
-        background-color: bg;
-        color: black;
-      }
       .z0Container_gx1hqw {
         margin-left: auto;
         margin-right: auto;
         padding-left: 16px;
         padding-right: 16px;
-      }
-      .z0Container_mdmmr9 {
       }
       .z0Container_6osar3 {
         max-width: 72rem;
@@ -355,14 +314,6 @@ const Index = () => (
       .z0Link_1wdoa1p {
         color: black;
       }
-      .z0Link_mdmmr9 {
-      }
-      .z0Link_jm3649:focus {
-      }
-      .z0Link_15081t5:hover {
-      }
-      .z0Link_4kbyf6:active {
-      }
       .z0Link_16bnkq {
         display: block;
         font-weight: bold;
@@ -397,8 +348,6 @@ const Index = () => (
       .z0Ul_w94ir4 {
         margin-bottom: 6px;
         padding-left: 0px;
-      }
-      .z0Ul_mdmmr9 {
       }
       .z0Ul_aw2unr {
         list-style: none;
@@ -466,8 +415,6 @@ const Index = () => (
       .z0Flexbox_i86xbc {
         width: 50%;
       }
-      .z0Flexbox_mdmmr9 {
-      }
       .z0TextLink_i2atn7 {
         font-size: 14px;
       }
@@ -476,8 +423,6 @@ const Index = () => (
         padding-left: 0px;
         padding-top: 0px;
         padding-bottom: 0px;
-      }
-      .z0Img_mdmmr9 {
       }
       .z0Img_nw324o {
         display: block;
@@ -502,10 +447,6 @@ const Index = () => (
       .z0Span_tt19w7 {
         font-size: 12px;
       }
-      .z0Span_mdmmr9 {
-      }
-      .z0LogoLab_mdmmr9 {
-      }
       .z0LogoLab_10ybkcb {
         width: 44px;
       }
@@ -529,10 +470,6 @@ const Index = () => (
         padding-right: 8px;
         padding-top: 50px;
         padding-bottom: 0px;
-      }
-      .z0Header_hz4vw0 {
-        background-color: #f0f5f8;
-        color: #929292;
       }
       .z0Container_bpfrzz {
         margin-left: auto;
@@ -588,9 +525,6 @@ const Index = () => (
       .z0Flexbox_1lcbbl9 {
         padding-right: 16px;
       }
-      .z0Div_1vd3drs {
-        text-align: left;
-      }
       .z0Svg_3h4hbk {
         background-color: undefined;
         color: undefined;
@@ -616,18 +550,11 @@ const Index = () => (
         background-color: bg;
         color: black;
       }
-      .z0Header_mdmmr9 {
-      }
       .z0Container_gx1hqw {
         margin-left: auto;
         margin-right: auto;
         padding-left: 16px;
         padding-right: 16px;
-      }
-      .z0Container_mdmmr9 {
-      }
-      .z0Container_6osar3 {
-        max-width: 72rem;
       }
       .z0H3_16557ik {
         font-size: 20px;
@@ -643,8 +570,6 @@ const Index = () => (
       .z0H3_x1yig9 {
         border-width: 0px;
         border-style: solid;
-      }
-      .z0H3_mdmmr9 {
       }
       .z0H1_1o2ezep {
         font-size: 32px;
@@ -686,8 +611,6 @@ const Index = () => (
       .z0H4_1ycl9dg {
         font-size: 20px;
         margin-left: 8px;
-      }
-      .z0H4_mdmmr9 {
       }
       .z0H4_1wdoa1p {
         color: black;
@@ -844,19 +767,6 @@ const Index = () => (
       }
       .z0LogoLab_nw324o {
         display: block;
-      }
-      .z0Header_hz4vw0 {
-        background-color: #f0f5f8;
-        color: #929292;
-      }
-      .z0Container_bpfrzz {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-      .z0H3_35iemg {
-        color: #929292;
       }
       .z0H1_35iemg {
         color: #929292;

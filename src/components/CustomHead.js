@@ -1,26 +1,26 @@
-import Head from 'next/head'
+import Head from "next/head"
 
 export function CustomHead({
-  site_name = 'Emmanuel Nosakhare - Programmer in Lagos',
-  description = 'Building smarter, more people friendly systems.',
-  url = '',
-  type = 'WebSite',
-  title = 'Emmanuel Nosakhare - Programmer in Lagos',
-  dateModified = '',
-  datePublished = '',
-  dateCreated = '',
-  keywords = '',
+  site_name = "Emmanuel Nosakhare",
+  description = "Building smarter, more people friendly systems.",
+  url = "",
+  type = "WebSite",
+  title = "Emmanuel Nosakhare",
+  dateModified = "",
+  datePublished = "",
+  dateCreated = "",
+  keywords = "",
   image,
   author,
   android_url,
   ios_url,
-  twitter = 'TheNosakhare'
+  twitter = "",
 }) {
   function fixUrl(url) {
     if (!url) return
 
-    if (!url.substring(0, 5).includes('http')) {
-      if (!url.substring(0, 2).includes('//')) return `https://${url}`
+    if (!url.substring(0, 5).includes("http")) {
+      if (!url.substring(0, 2).includes("//")) return `https://${url}`
       return `https:${url}`
     }
 
@@ -103,29 +103,29 @@ export function CustomHead({
     )
   }
 
-  const isArticle = type == 'Article'
+  const isArticle = type == "Article"
   let ldjson = {
-    '@context': 'https://schema.org',
+    "@context": "https://schema.org",
     name: site_name,
-    '@type': type,
+    "@type": type,
     publisher: {
-      '@type': 'Organization',
-      name: 'Emmanuel Nosakhare',
+      "@type": "Organization",
+      name: "Emmanuel Nosakhare",
       logo: {
-        '@type': 'ImageObject',
-        url: 'https://osarogie.com/apple-icon.png',
+        "@type": "ImageObject",
+        url: "https://osarogie.com/apple-icon.png",
         width: 60,
-        height: 60
-      }
+        height: 60,
+      },
     },
 
     mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://osarogie.com/'
-    }
+      "@type": "WebPage",
+      "@id": "https://osarogie.com/",
+    },
   }
 
-  if (type === 'WebSite') {
+  if (type === "WebSite") {
     if (dateCreated) ldjson.dateCreated = dateCreated
     if (dateModified) ldjson.dateModified = dateCreated
   }
@@ -134,35 +134,35 @@ export function CustomHead({
 
   if (image)
     ldjson.image = {
-      '@type': 'ImageObject',
+      "@type": "ImageObject",
       url: fixUrl(image.url),
       width: image.width,
-      height: image.height
+      height: image.height,
     }
 
   if (isArticle) {
     ldjson = {
       ...ldjson,
       author: {
-        '@type': 'Person',
+        "@type": "Person",
         name: author.name,
         url: author.publicUrl,
-        sameAs: author.links ? [].concat(author.links) : []
+        sameAs: author.links ? [].concat(author.links) : [],
       },
       headline: title,
       datePublished,
       dateCreated,
       dateModified,
       keywords,
-      description
+      description,
     }
 
     if (author.profilePicture) {
       ldjson.author.image = {
-        '@type': 'ImageObject',
+        "@type": "ImageObject",
         url: fixUrl(author.profilePicture),
         width: 250,
-        height: 250
+        height: 250,
       }
     }
   }

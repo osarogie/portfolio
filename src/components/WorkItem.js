@@ -6,23 +6,24 @@ export function WorkItem({ name, description, image, url, links = [] }) {
       <ThumbnailContainer
         href={url}
         title={name}
-        className="z0Link_i2atn7 z0Link_mdmmr9 z0Link_35iemg z0Link_cvl0fu z0Link_1l0da3s"
+        className="z0Link_i2atn7 text-[#afaeae] z0Link_cvl0fu z0Link_1l0da3s"
       >
-        <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja z0AspectRatio_dvi25k z0AspectRatio_leueqe">
+        <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja rounded-lg z0AspectRatio_leueqe">
           <div
             style={{
               backgroundImage: `url(${image})`,
             }}
-            className="thumbnail z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_dvi25k z0AspectRatioObject_hqpzos"
+            className="z0AspectRatioObject_w8x2v6 z0AspectRatioObject_hqpzos rounded-lg"
           />
         </div>
       </ThumbnailContainer>
       <div className="flex">
         <div className="meta">
-          <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">
+          <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 text-gray-900 z0H3_x1yig9 z0H3_mdmmr9 filter drop-shadow-md">
             {name}
           </h3>
-          <p className="z0P_i2atn7 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o">
+
+          <p className="text-sm text-gray-700 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o filter drop-shadow-md">
             <i>{description}</i>
           </p>
         </div>
@@ -30,7 +31,7 @@ export function WorkItem({ name, description, image, url, links = [] }) {
           <a href={url} className="link" key={i}>
             <img
               alt="link"
-              src={`//microicon-bki71i39a.vercel.app/${icon}/555555/${size}`}
+              src={`//microicon-bki71i39a.vercel.app/${icon}/888888/${size}`}
               className="z0Img_mdmmr9 z0Img_nw324o"
             />
           </a>
@@ -47,26 +48,14 @@ export function WorkItem({ name, description, image, url, links = [] }) {
           margin-right: 16px;
           height: 50px;
           width: 50px;
-          border: 1px solid #222;
           display: flex;
           align-items: center;
           justify-content: center;
           border-radius: 25px;
-          transition: border-color 0.25s ease-in;
-        }
-        .link:hover {
-          border-color: #444;
         }
         .flex {
           display: flex;
           min-height: 140px;
-        }
-        .thumbnail {
-          border: 1px solid #222;
-          transition: border-color 0.25s ease-in;
-        }
-        .thumbnail:hover {
-          border-color: #444;
         }
         .z0Box_ywo3zt {
           padding-left: 8px;
@@ -81,16 +70,6 @@ export function WorkItem({ name, description, image, url, links = [] }) {
         .z0P_u9qnin {
           margin-top: 0px;
           padding-bottom: 8px;
-        }
-        .z0P_i2atn7 {
-          font-size: 14px;
-          color: #555;
-        }
-        .z0H3_35iemg {
-          color: #afaeae;
-        }
-        .z0AspectRatio_dvi25k {
-          border-radius: 0;
         }
         .z0AspectRatio_leueqe {
           height: 0;
@@ -123,9 +102,6 @@ export function WorkItem({ name, description, image, url, links = [] }) {
         .z0H3_16557ik {
           font-size: 20px;
         }
-        .z0AspectRatioObject_dvi25k {
-          border-radius: 0;
-        }
         .z0AspectRatioObject_hqpzos {
           background-position: center center;
           background-repeat: no-repeat;
@@ -141,17 +117,11 @@ export function WorkItem({ name, description, image, url, links = [] }) {
         .z0AspectRatioObject_w8x2v6 {
           width: 100%;
         }
-        .z0AspectRatioObject_mdmmr9 {
-        }
         .z0AspectRatio_1h0a8ja {
           background-color: #f0f5f8;
         }
         .z0AspectRatio_1dte17j {
           padding-bottom: 56.25%;
-        }
-        .z0Link_1l0da3s:hover {
-          opacity: 0.7;
-          transition: opacity 0.2s ease-in-out;
         }
         .z0Link_1l0da3s:hover {
           opacity: 0.7;
@@ -169,9 +139,6 @@ export function WorkItem({ name, description, image, url, links = [] }) {
 
         .z0Link_i2atn7 {
           font-size: 14px;
-        }
-        .z0Link_35iemg {
-          color: #afaeae;
         }
 
         .z0Link_cvl0fu {
