@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function WorkItem({ name, description, image, url = null, links = [] }) {
   const ThumbnailContainer = url ? "a" : "div"
 
@@ -29,9 +31,11 @@ export function WorkItem({ name, description, image, url = null, links = [] }) {
         </div>
         {links.map(({ url, icon, size = 25 }, i) => (
           <a href={url} className="link" key={i}>
-            <img
-              alt="link"
-              src={`//microicon-bki71i39a.vercel.app/${icon}/888888/${size}`}
+            <Image
+              alt={name}
+              width={size}
+              height={size}
+              src={`https://microicon-bki71i39a.vercel.app/${icon}/888888/${size}`}
               className="z0Img_mdmmr9 z0Img_nw324o"
             />
           </a>
