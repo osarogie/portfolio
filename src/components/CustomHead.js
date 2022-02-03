@@ -10,10 +10,10 @@ export function CustomHead({
   datePublished = "",
   dateCreated = "",
   keywords = "",
-  image,
-  author,
-  android_url,
-  ios_url,
+  image = null,
+  author = null,
+  android_url = null,
+  ios_url = null,
   twitter = "",
 }) {
   function fixUrl(url) {

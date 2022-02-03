@@ -1,4 +1,4 @@
-export function WorkItem({ name, description, image, url, links = [] }) {
+export function WorkItem({ name, description, image, url = null, links = [] }) {
   const ThumbnailContainer = url ? "a" : "div"
 
   return (
@@ -6,7 +6,7 @@ export function WorkItem({ name, description, image, url, links = [] }) {
       <ThumbnailContainer
         href={url}
         title={name}
-        className="z0Link_i2atn7 text-[#afaeae] z0Link_cvl0fu z0Link_1l0da3s"
+        className="z0Link_i2atn7 text-black z0Link_cvl0fu z0Link_1l0da3s"
       >
         <div className="z0AspectRatio_1dte17j z0AspectRatio_1h0a8ja rounded-lg z0AspectRatio_leueqe">
           <div
@@ -19,11 +19,11 @@ export function WorkItem({ name, description, image, url, links = [] }) {
       </ThumbnailContainer>
       <div className="flex">
         <div className="meta">
-          <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 text-gray-900 z0H3_x1yig9 z0H3_mdmmr9 filter drop-shadow-md">
+          <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 text-black z0H3_x1yig9 z0H3_mdmmr9">
             {name}
           </h3>
 
-          <p className="text-sm text-gray-700 z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o filter drop-shadow-md">
+          <p className="text-sm text-black z0P_10plfnz z0P_u9qnin z0P_mdmmr9 z0P_eqnk6o">
             <i>{description}</i>
           </p>
         </div>

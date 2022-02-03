@@ -1,16 +1,17 @@
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 module.exports = {
-  mode: "jit",
-  future: {
-    purgeLayersByDefault: true,
-  },
-  purge: {
-    content: [
-      "./pages/**/*.{js,ts,jsx,tsx}",
-      "./src/components/**/*.{js,ts,jsx,tsx}",
-    ],
-  },
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/views/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        koho: ["KoHo"],
+      },
       maxWidth: {
         "8xl": "1920px",
       },
@@ -18,6 +19,8 @@ module.exports = {
         primary: "var(--primary)",
         "primary-2": "var(--primary-2)",
         "primary-400": "var(--primary)",
+        "primary-500": "var(--primary-500)",
+        "primary-700": "var(--primary-700)",
         "primary-600": "var(--primary)",
         "primary-900": "var(--primary)",
         secondary: "var(--secondary)",
@@ -57,8 +60,6 @@ module.exports = {
         "extra-loose": "2.2",
       },
     },
-    fontFamily: {
-      koho: ["KoHo"],
-    },
   },
+  plugins: [],
 }
