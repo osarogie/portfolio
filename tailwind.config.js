@@ -3,6 +3,7 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/views/**/*.{js,ts,jsx,tsx}",
   ],
@@ -10,7 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-        koho: ["KoHo"],
+        koho: ["var(--koho-font)", ...defaultTheme.fontFamily.serif],
       },
       maxWidth: {
         "8xl": "1920px",
