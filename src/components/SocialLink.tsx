@@ -1,18 +1,17 @@
-import Image from "next/image"
+type Props = {
+  href: string
+  icon: React.FC<React.SVGProps<SVGSVGElement>>
+  color?: string
+  size?: number
+}
 
-export function SocialLink({ href, icon, color = "d6b2b2", size = 16 }) {
+export const SocialLink: React.FC<Props> = ({ href, icon: Icon }) => {
   return (
     <a
       href={href}
       className="z0TextLink_hr1it z0TextLink_h1xc7s z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
     >
-      <Image
-        src={`https://microicon-bki71i39a.vercel.app/${icon}/${color}/${size}`}
-        className="z0Img_nw324o"
-        width={size}
-        height={size}
-        alt={icon}
-      />
+      <Icon className="z0Img_nw324o h-8 w-8 hover:text-black" color="#d6b2b2" />
       <style jsx>{`
         .z0TextLink_hr1it {
           margin-right: 32px;

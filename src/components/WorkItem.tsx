@@ -1,6 +1,22 @@
-import Image from "next/image"
+type Props = {
+  name: string
+  description: string
+  image: string
+  url?: string
+  links?: {
+    url: string
+    icon: React.FC<React.SVGProps<SVGSVGElement>>
+    title?: string
+  }[]
+}
 
-export function WorkItem({ name, description, image, url = null, links = [] }) {
+export const WorkItem: React.FC<Props> = ({
+  name,
+  description,
+  image,
+  url = null,
+  links = [],
+}) => {
   const ThumbnailContainer = url ? "a" : "div"
 
   return (
@@ -19,8 +35,8 @@ export function WorkItem({ name, description, image, url = null, links = [] }) {
           />
         </div>
       </ThumbnailContainer>
-      <div className="flex">
-        <div className="meta">
+      <div className="flex min-h-[140px]">
+        <div className="flex-1 ml-4">
           <h3 className="z0H3_16557ik z0H3_55w3hf z0H3_1u1o96 text-black z0H3_x1yig9 z0H3_mdmmr9">
             {name}
           </h3>
@@ -29,23 +45,13 @@ export function WorkItem({ name, description, image, url = null, links = [] }) {
             <i>{description}</i>
           </p>
         </div>
-        {links.map(({ url, icon, size = 25 }, i) => (
-          <a href={url} className="link" key={i}>
-            <Image
-              alt={name}
-              width={size}
-              height={size}
-              src={`https://microicon-bki71i39a.vercel.app/${icon}/888888/${size}`}
-              className="z0Img_mdmmr9 z0Img_nw324o"
-            />
+        {links.map(({ url, icon: Icon, title }, i) => (
+          <a href={url} className="link" key={i} title={title}>
+            <Icon className="z0Img_mdmmr9 z0Img_nw324o h-8 w-8 hover:text-black" />
           </a>
         ))}
       </div>
       <style jsx>{`
-        .meta {
-          flex: 1;
-          margin-left: 16px;
-        }
         .link {
           display: block;
           line-height: 50px;
@@ -56,10 +62,6 @@ export function WorkItem({ name, description, image, url = null, links = [] }) {
           align-items: center;
           justify-content: center;
           border-radius: 25px;
-        }
-        .flex {
-          display: flex;
-          min-height: 140px;
         }
         .z0Box_ywo3zt {
           padding-left: 8px;
