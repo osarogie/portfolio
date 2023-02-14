@@ -1,4 +1,6 @@
 import "tailwindcss/tailwind.css"
+import "./styles/global.css"
+import "./styles/workItem.css"
 import { KoHo } from "@next/font/google"
 
 const koHo = KoHo({
