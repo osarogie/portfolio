@@ -49,13 +49,29 @@ const Index = () => (
             </div>
           </div>
           <div className="z0Box_3ct8mo z0Box_w8x2v6 z0Box_8ctdvs">
-            <div className="z0Container_tt19w7 z0Container_1jdd6it z0Container_35iemg z0Container_6osar3">
+            <div className="z0Container_1jdd6it z0Container_35iemg z0Container_6osar3">
               <div className="z0Box_ywo3zt">
-                <h4 id="work" className="text-xl mb-10 text-black font-bold">
-                  Some of my work
-                </h4>
+                <div
+                  id="work"
+                  className="text-2xl mb-10 text-black font-bold uppercase"
+                >
+                  Some projects I&apos;ve worked on
+                </div>
               </div>
               <div className="z0Flexbox_mdmmr9 z0Flexbox_155cfuf">
+                <WorkItem
+                  name="Solana Pawn Shop"
+                  url="//solanapawnstars.com"
+                  description="Pawn Your NFTs For Liquidity"
+                  image="/images/sps.jpg"
+                  links={[
+                    {
+                      url: "//solanapawnstars.com",
+                      icon: GlobeEuropeAfricaIcon,
+                      title: "SPS Website",
+                    },
+                  ]}
+                />
                 <WorkItem
                   name="SmartHarvest"
                   url="//smartharvest.africa"
