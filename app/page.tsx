@@ -1,9 +1,9 @@
-import { WorkItem } from "../src/components/WorkItem"
-import { SocialLink } from "../src/components/SocialLink"
+import { WorkItem } from "./components/WorkItem"
+import { SocialLink } from "./components/SocialLink"
 import Image from "next/image"
 import GlobeEuropeAfricaIcon from "@heroicons/react/24/outline/GlobeEuropeAfricaIcon"
 import EnvelopeIcon from "@heroicons/react/24/outline/EnvelopeIcon"
-import { GitHubIcon, PlayStoreIcon } from "../src/components/Icons"
+import { GitHubIcon, PlayStoreIcon } from "./components/Icons"
 
 const Index = () => (
   <div>
@@ -159,7 +159,7 @@ const Index = () => (
             <div className="z0Flexbox_1j8enju z0Flexbox_i86xbc z0Flexbox_mdmmr9 z0Flexbox_155cfuf">
               <SocialLink href="//github.com/osarogie" icon={GitHubIcon} />
               <SocialLink
-                href="mailto:nonreactiv@gmail.com"
+                href="mailto:hello@osarogie.com"
                 icon={EnvelopeIcon}
                 size={18}
               />
