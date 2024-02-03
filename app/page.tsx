@@ -161,10 +161,10 @@ const Index = () => (
 
                   <li className="z0ListItem_kewhca z0ListItem_mdmmr9">
                     <a
-                      href="https://thecommunity.ng/nosa/221/how-i-started-a-company-by-accident"
+                      href="https://medium.com/@osarogie/analysing-flight-data-8411fffa6e6a"
                       className="z0TextLink_1ycl9dg z0TextLink_9pt98l z0TextLink_zvxvn2 z0TextLink_1kqftbz z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_h82a9u z0TextLink_mdmmr9 z0TextLink_43bo14 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_1oi5w5u"
                     >
-                      How I started a company (by accident)
+                      Analysing Flight Data
                     </a>
                   </li>
                 </ul>
