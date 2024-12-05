@@ -2,8 +2,7 @@ export default function Head() {
   const description = "Building smarter, more people friendly systems.",
     url = "https://osarogie.com",
     type = "WebSite",
-    title = "Emmanuel Nosakhare",
-    siteName = title
+    title = "Emmanuel Nosakhare"
 
   return (
     <>
@@ -65,7 +64,7 @@ export default function Head() {
         sizes="16x16"
         href="/favicon-16x16.png"
       />
-      <meta property="og:site_name" key="og:site_name" content={siteName} />
+      <meta property="og:site_name" key="og:site_name" content={title} />
       <meta property="og:type" key="og:type" content={type.toLowerCase()} />
       <meta property="og:title" key="og:title" content={title} />
       <meta

@@ -1,53 +1,42 @@
 import "tailwindcss/tailwind.css"
-import "./styles/global.css"
-import "./styles/workItem.css"
-import { KoHo } from "next/font/google"
+import { Lato, Playfair } from "next/font/google"
+import React from "react"
 
-const koHo = KoHo({
-  weight: ["200", "400"],
+const lato = Lato({
+  weight: ["100", "300", "400"],
   display: "swap",
   subsets: ["latin"],
 })
+const playFair = Playfair({
+  weight: ["500", "300", "400"],
+  display: "swap",
+  subsets: ["latin"],
+})
+const fullName = "Emmanuel Nosakhare"
+export const metadata = {
+  title: fullName,
+  publisher: fullName,
+  openGraph: {
+    type: "website",
+    siteName: fullName,
+    images: {
+      type: "ImageObject",
+      url: "https://osarogie.com/apple-icon.png",
+      width: 60,
+      height: 60,
+    },
+  },
+}
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const type = "WebSite",
-    title = "Emmanuel Nosakhare",
-    siteName = title
-
-  const ldjson = {
-    "@context": "https://schema.org",
-    name: siteName,
-    "@type": type,
-    publisher: {
-      "@type": "Organization",
-      name: "Emmanuel Nosakhare",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://osarogie.com/apple-icon.png",
-        width: 60,
-        height: 60,
-      },
-    },
-
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": "https://osarogie.com/",
-    },
-  }
-
   return (
     <html>
-      <head />
-      <body className={koHo.className}>
+      <body className={`${lato.className} ${playFair.className}`}>
         {children}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ldjson) }}
-        />
       </body>
     </html>
   )
