@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Sudoku Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Simple Sudoku - Puzzle Game.">
+  <style>
+    :root {
+      --bg: #f5f1e8;
+      --surface: rgba(255, 255, 255, 0.8);
+      --surface-strong: #ffffff;
+      --text: #16211c;
+      --muted: #58645e;
+      --accent: #1f7a5a;
+      --accent-strong: #14533d;
+      --line: rgba(22, 33, 28, 0.1);
+      --shadow: 0 24px 60px rgba(22, 33, 28, 0.1);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(31, 122, 90, 0.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(222, 174, 68, 0.18), transparent 24%),
+        linear-gradient(180deg, #fbf9f3 0%, var(--bg) 100%);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-strong);
+    }
+
+    .page {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 64px;
+    }
+
+    .hero {
+      padding: 40px;
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      background:
+        linear-gradient(135deg, rgba(31, 122, 90, 0.08), rgba(255, 255, 255, 0.92)),
+        var(--surface-strong);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 36px;
+      transform: rotate(18deg);
+      background:
+        linear-gradient(135deg, rgba(31, 122, 90, 0.18), rgba(222, 174, 68, 0.22));
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(31, 122, 90, 0.1);
+      color: var(--accent-strong);
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(2.4rem, 5vw, 4.6rem);
+      line-height: 0.96;
+      max-width: 12ch;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 62ch;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .meta {
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .jump-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .jump-links a {
+      display: block;
+      padding: 16px 18px;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      font-weight: 700;
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
+
+    .jump-links a:hover,
+    .jump-links a:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(31, 122, 90, 0.35);
+      background: #fff;
+    }
+
+    .policy {
+      margin-top: 24px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .card {
+      padding: 28px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 18px 42px rgba(22, 33, 28, 0.06);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p + p,
+    ul {
+      margin-top: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 10px;
+    }
+
+    .highlight {
+      margin-top: 24px;
+      padding: 28px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+      color: #f7fbf9;
+      box-shadow: var(--shadow);
+    }
+
+    .highlight p {
+      color: rgba(247, 251, 249, 0.9);
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 780px) {
+      .page {
+        width: min(100% - 20px, 1080px);
+        padding: 20px 0 44px;
+      }
+
+      .hero,
+      .card,
+      .highlight {
+        padding: 22px;
+      }
+
+      h1 {
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">Privacy Policy</div>
+      <h1>Your puzzle time stays personal.</h1>
+      <p>
+        This Privacy Policy explains how Simple Sudoku - Puzzle Game handles information when you use the app.
+        The policy is written to be easy to scan and suitable for linking from an app store listing or website.
+      </p>
+      <p class="meta"><strong>Effective date:</strong> March 22, 2026</p>
+
+      <nav class="jump-links" aria-label="Privacy policy sections">
+        <a href="#collect">Information We Collect</a>
+        <a href="#use">How Information Is Used</a>
+        <a href="#share">Sharing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </section>
+
+    <section class="policy" aria-label="Privacy policy content">
+      <article class="card" id="collect">
+        <h2>Information We Collect</h2>
+        <p>
+          Simple Sudoku is designed to work without requiring you to create an account or submit personal information.
+        </p>
+        <ul>
+          <li>The app may store gameplay information locally on your device, such as completed game history and puzzle progress.</li>
+          <li>The app does not require your name, email address, or phone number to play.</li>
+          <li>The developer does not intentionally collect personal data through the game itself.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="use">
+        <h2>How Information Is Used</h2>
+        <p>
+          Any gameplay information stored by the app is used only to support core features such as remembering completed games and improving your in-app experience.
+        </p>
+        <ul>
+          <li>Saved data helps the app display your game history.</li>
+          <li>Stored information is used to maintain app functionality on your device.</li>
+          <li>No local gameplay data is used to identify you personally.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="share">
+        <h2>Sharing and Third Parties</h2>
+        <p>
+          The developer does not sell your personal information. If the app does not include analytics, ads, or third-party tracking tools, then no personal data is shared through those services.
+        </p>
+        <p>
+          If third-party services are added in a future update, this Privacy Policy should be updated to describe those services and the data they process.
+        </p>
+      </article>
+
+      <article class="card" id="storage">
+        <h2>Data Storage</h2>
+        <p>
+          Data created by your use of the game is primarily stored locally on your device. You can remove that data by deleting the app or clearing app data through your device settings, where available.
+        </p>
+      </article>
+
+      <article class="card" id="children">
+        <h2>Children’s Privacy</h2>
+        <p>
+          Simple Sudoku is not intended to knowingly collect personal information from children. Because the game is designed to function without requiring personal information, the developer does not intentionally gather personal data from child users.
+        </p>
+      </article>
+
+      <article class="card" id="changes">
+        <h2>Changes to This Policy</h2>
+        <p>
+          This Privacy Policy may be updated from time to time. When changes are made, the updated version should be posted with a revised effective date.
+        </p>
+      </article>
+    </section>
+
+    <section class="highlight" id="contact">
+      <h2>Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy, use the support contact method listed on the app store page for Simple Sudoku - Puzzle Game.
+      </p>
+    </section>
+
+    <footer>
+      Privacy Policy for <strong>Simple Sudoku - Puzzle Game</strong>.
+    </footer>
+  </main>
+</body>
+</html>
