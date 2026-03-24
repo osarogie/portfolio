@@ -62,10 +62,6 @@ const employers = [
   { company: "NNPC", role: "Software Engineer" },
   { company: "Gopuff", role: "Software Engineer" },
   { company: "AppZone Group", role: "Software Engineer" },
-  { company: "PayInterSystems", role: "Remote Software Engineer" },
-  { company: "Ikeja Electric", role: "Remote Mobile Developer" },
-  { company: "KonfamD", role: "Senior iOS Engineer" },
-  { company: "BIU Radio", role: "Software Consultant" },
 ]
 
 const links = [
