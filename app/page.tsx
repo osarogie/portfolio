@@ -15,6 +15,12 @@ const articles = [
 
 const projects = [
   {
+    name: "SurePadi for Polaris Bank",
+    description:
+      "Worked on digital banking experiences that supported customer access and everyday financial workflows.",
+    tag: "Banking",
+  },
+  {
     name: "Solana Pawn Shop",
     description:
       "A crypto-native lending concept that turns NFTs into quick liquidity.",
@@ -52,8 +58,19 @@ const projects = [
   },
 ]
 
+const employers = [
+  { company: "NNPC", role: "Software Engineer" },
+  { company: "Gopuff", role: "Software Engineer" },
+  { company: "AppZone Group", role: "Software Engineer" },
+  { company: "PayInterSystems", role: "Remote Software Engineer" },
+  { company: "Ikeja Electric", role: "Remote Mobile Developer" },
+  { company: "KonfamD", role: "Senior iOS Engineer" },
+  { company: "BIU Radio", role: "Software Consultant" },
+]
+
 const links = [
   { label: "GitHub", href: "https://github.com/osarogie" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/nosakhare" },
   { label: "Email", href: "mailto:hello@osarogie.com" },
 ]
 
@@ -73,17 +90,38 @@ export default function Index() {
               </p>
               <h1 className="max-w-2xl text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
                 Emmanuel
-                <span className="block text-stone-300">Osarogie</span>
+                <span className="block text-stone-300">Nosakhare</span>
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-7 text-stone-300 sm:text-lg">
-                I design and build useful digital products with a sharp eye for
-                clarity, momentum, and human experience.
+                Software engineer focused on high-impact systems—architecture,
+                integration, and delivery across energy, commerce, and fintech.
+                Recent work at NNPC, Gopuff, and AppZone.
               </p>
+              <div className="mt-5 space-y-2 border-l-2 border-amber-200/35 pl-4 text-sm leading-7 text-stone-400 sm:text-base">
+                <p>
+                  <span className="font-medium text-stone-200">
+                    Nexford University
+                  </span>
+                  {" — MSc, Data Analytics"}
+                </p>
+                <p>
+                  <span className="font-medium text-stone-200">
+                    Benson Idahosa University
+                  </span>
+                  {" — BSc, Computer Science"}
+                </p>
+              </div>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2 lg:w-[24rem] lg:grid-cols-1">
-              <StatCard value="6+" label="Public products across health, media, finance, and education" />
-              <StatCard value="2" label="Published pieces on systems, stories, and analysis" />
+              <StatCard
+                value="10+"
+                label="Years shipping software from agency banking and payments to energy and commerce"
+              />
+              <StatCard
+                value="2"
+                label="Published pieces on systems, stories, and analysis"
+              />
             </div>
           </header>
 
@@ -95,7 +133,7 @@ export default function Index() {
                     Selected Work
                   </p>
                   <h2 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">
-                    Products shaped around real-world use
+                    Products delivered for serious operators
                   </h2>
                 </div>
                 <div className="hidden rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-stone-300 sm:block">
@@ -144,8 +182,9 @@ export default function Index() {
                   Open to thoughtful collaboration
                 </h2>
                 <p className="mt-4 max-w-md text-sm leading-7 text-stone-700">
-                  If you&apos;re building something ambitious and want a product
-                  engineer who cares about polish and usefulness, let&apos;s talk.
+                  I&apos;ve helped build for Polaris Bank, Access, Candis, and
+                  NipeX. If you need an engineer who cares about product quality
+                  and execution, let&apos;s talk.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   {links.map((link) => (
@@ -160,6 +199,26 @@ export default function Index() {
                 </div>
               </section>
             </div>
+          </section>
+
+          <section className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-black/20 backdrop-blur sm:p-8">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-sm font-medium uppercase tracking-[0.28em] text-stone-400">
+                  Career
+                </p>
+                <h2 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">
+                  Companies I&apos;ve worked with
+                </h2>
+              </div>
+            </div>
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {employers.map((job) => (
+                <li key={job.company}>
+                  <EmployerCard {...job} />
+                </li>
+              ))}
+            </ul>
           </section>
         </div>
       </div>
@@ -195,5 +254,14 @@ function ProjectCard({
       </div>
       <p className="mt-4 text-sm leading-6 text-stone-400">{description}</p>
     </article>
+  )
+}
+
+function EmployerCard({ company, role }: { company: string; role: string }) {
+  return (
+    <div className="flex h-full flex-col rounded-[1.5rem] border border-white/10 bg-stone-950/50 p-5 transition duration-200 hover:border-amber-200/25 hover:bg-stone-900/80">
+      <p className="text-lg font-semibold text-white">{company}</p>
+      <p className="mt-2 text-sm leading-6 text-stone-300">{role}</p>
+    </div>
   )
 }
