@@ -1,14 +1,16 @@
-import "tailwindcss/tailwind.css"
+import "./globals.css"
 import { Lato, Playfair } from "next/font/google"
 import React from "react"
 
 const lato = Lato({
-  weight: ["100", "300", "400"],
+  weight: ["400", "700"],
+  variable: "--font-lato",
   display: "swap",
   subsets: ["latin"],
 })
 const playFair = Playfair({
-  weight: ["500", "300", "400"],
+  weight: ["400", "500", "600"],
+  variable: "--font-playfair",
   display: "swap",
   subsets: ["latin"],
 })
@@ -34,8 +36,24 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
-      <body className={`${lato.className} ${playFair.className}`}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          (() => {
+            let theme;
+            try { theme = localStorage.getItem('portfolio-theme'); } catch {}
+            if (theme !== 'light' && theme !== 'dark') {
+              theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+            }
+            document.documentElement.dataset.theme = theme;
+          })();
+        `,
+          }}
+        />
+      </head>
+      <body className={`${lato.variable} ${playFair.variable}`}>
         {children}
       </body>
     </html>
